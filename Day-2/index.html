@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation Page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!------------ SIDEBAR ----------->
+        <div class="container-left">
+            
+            <h1>Technical</h1>
+            <h1>Documentation</h1>
+            <ul>
+                <li><a href="#intro">CSS-Overview</a></li>
+                <li><a href="#syntax">CSS-Syntax</a></li>
+                <li><a href="#box-model">CSS-Box Model</a></li>
+                <li><a href="#summary">Summary</a></li>
+            </ul>
+        </div>
+
+        <p class="border"></p>
+
+        <!---------- DOCUMENTATION CONTENT --------->
+        <div class="container-right">
+            <h1 class="heading">Introduction to CSS</h1>
+
+            <!------------ SECTIONS -------------->
+            <section id="intro">
+                <h2>Overview</h2>
+                <p>
+                    CSS (Cascading Style Sheets) is a language for styling the webpage. We can change theappearance and the layout of the webpage by using CSS. We can also define how awebsite's view changes in different screens like desktops, tablets, and mobile devices.CSS is not a programming language, like C++ or JavaScript.
+                </p>
+                <p>
+                    Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+                </p>
+                <p>
+                    CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, development of various parts of CSS specification was done synchronously, which allowed versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, CSS3. However, CSS4 has never become an official version.
+                </p>
+                <p>
+                    From CSS3, the scope of the specification increased significantly and the progress on different CSS modules started to differ so much, that it became more effective to develop and release recommendations separately per module. Instead of versioning the CSS specification, W3C now periodically takes a snapshot of the latest stable state of the CSS specification.
+                </p>
+                <p>Advantages of CSS :</p>
+
+                <p>1. CSS saves time - You can write CSS once and then reuse the same sheet in multiple
+                    HTML pages. You can define a style for each HTML element and apply it to as many
+                    web pages as you want.</p>
+
+                <p>2. Pages load faster - If you are using CSS, you do not need to write HTML tag
+                    attributes every time. Just write one CSS rule of a tag and apply it to all the
+                    occurrences of that tag. So, less code means faster download times.</p>
+
+                <p>3. Easy maintenance - To make a global change, simply change the style, and all the
+                    elements in all the web pages will be updated automatically.</p>
+
+                <p>4. Superior styles to HTML - CSS has a much wider array of attributes than HTML, so
+                    you can give a far better look to your HTML page in comparison to HTML attributes.</p>
+
+                <p>5. Multiple Device Compatibility - Style sheets allow content to be optimized for more
+                    than one type of device. By using the same HTML document, different versions of a
+                    website can be presented for handheld devices such as PDAs and cellphones or for
+                    printing.</p>
+
+                <p>6. Global web standards – Now HTML attributes are being deprecated and it is being
+                    recommended to use CSS. So it’s a good idea to start using CSS in all the HTML pages
+                    to make them compatible with future browsers</p>
+            </section>
+
+            <section id="syntax">
+                <h2>CSS Syntax</h2>
+                <p>
+                    A CSS rule consists of a selector and a declaration block. The selector points to the HTMLelement you want to style. The declaration block contains one or more declarationsseparated by semicolons. Each declaration includes a CSS property name and a value,separated by a colon. Multiple CSS declarations are separated with semicolons, anddeclaration blocks are surrounded by curly braces.
+                </p>
+                <br>
+                <p>
+                    <p>Example -</p>
+                    <img src="data:image/png;base64,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" alt="">
+                    <p>p is a selector in CSS (it points to the HTML element you want to style: p tag). <br> color is a property, and blue is the property value.</p>
+                </p>
+                <br>
+                <p>
+                    <p>Selection with class</p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP0AAADHCAMAAADlCqUFAAAC6FBMVEX///+IABV+AACTNDv69/eHAA2CAADKp6kAAAD///3///p7AAD7//////n2/////+3///OaAAD//+no///c//8AAA////Hv/////97//+YAAELy//+IAACPQnr4+On09NRGAAAAWJmTAAD//9SMAADaw8TK6dMAsGOq3Ljr8Pdtl8kAuHXp//Pe+f85tUIAvo+J4N8AoyFp1tBIjMgAAEgAAFKkpaUAJHTcz7kAaq8TAAAAADEfAAA6AAAAADlbXFoAAG2tx+GQmamDUTeg3OswLTZro9enl5iNHyjf7NnP7uQnplGi8Ozi6/XR46ERrEBXu1ZHyr2euNmAps+vzWkZwJ3g68mpz3e96+Kv4s7/77HM+foHtFuEwVTU4q1Ru3RnvFVQxZrO2evD4aOf2KiWzYvP2pGK1bqWxWQ1dLVisz2A4dOMyXjO6spwxpSq7+SfyFZuxKTJ9Mx4ypK937ESun2X1amhynbH56KFzIfq8bPF99291IEcwq5TrT0YvIBswWtx4+AAomJfvoCM47+Hwo5YsiW39/8Jz8tZ2Ll9vmokqhcAokvq5J/p/+F+zWmziFRXJQBllbXHpnj/2acAOYDdzqDkv6SOQgCqs703TVhFPiaDZD00FwAALF4AEybnvKBSdqeTVSekbRIAI0dhAADPqGPA3/+xdzd3mqiUhXERQl+epoCKZTYrTX6MqqlbMgCUzf+uhD5fbH1xVVhVU3Z3ZVvIoINigJywh2M+e6I9YnttP2V3u9g6AFpyOiN/W3N4c39TSoqOucRSOUu7ioCOi5QAPpHNr6MLH2c4NlFvRUCjkrC8rrmQmb8AIldmRURBMFvVzdg/NHvWxIBlMSZ8SweScEJBJigoLCtobY1mcUOvztREQmwhYpQJO1inkF9cNEzYl03zt35FJQA0Dz1+ADmoQSaheayEHVnjp43YiV+qoNPNZzmvPAPTy+mXYIiaVlibQDaCJXi8cWiOV57HXTGrltRSG8ZdAAASyklEQVR4nO2de0ATx77HB5tCNuRloISHblSImJCIEolL0WIC8pIYTaqiIOraFlPr6/po69Gqta23XuViVNLYVqXaYrXmaAGJWqrUgpGCtmm1xQZ6b+21PlofPT3n/HtnN1QRJEBIsgT2+8dmdnaS/X0yM7+ZnZndBQEBAU8OTEFyEBCQ+cTA1JMEfWAQGJgaNJDpGTQ9TT8gRdPT9FTbQY1oepqeajuokY/pkayR2Wy4kQNyA4WOHCkPn5Ljo/O3k4/oNbjzc6pWG5uzVquNl08lNgBETNOOnR7Rj+nZGp0iSS8hguHaBCDKfnYGe2YUsREC1qwZoZxsmPeCUaNy2XAjF42aHeVFYx6Vt+klEF0hVUnY5N6cuDy4nTktf4xzA8LmJsAImPcF86atzn42f17u/NgFcm8Z00Hepcd1CoNUpXmwPyeWoAeChfk5zo2Tnsj7556PzXkhrjBqUfxsrneMeYy8Ry/B9QaFHme3jRO8GD9y4eKXZhfELiM2OQB5IbZwydKiKcuWTy+YkpO15LXpIwu2+c4JeImejeulBj0uaR8fPU27IQ86vATC/yXAf4bzslY7hij52rh5yxZpVy+Zpp0R6mFjOpc36IlcN+gezfW+KU/TsyW4VKHwC3TgaXqJyl9y3SkP0mtUUoNUp+k6Yd+Rh+jZEp1UAdEZXaZEuK0lg8Wlvoh4hB5XPdqsu1Jrkw/CXtQuni0kg6JRIXDLG5XXKyPcUa/pJbizM9fd9NFxTsjo2LyCFSHO4FLhuulAsNTv6HGdNEmKd7+uFyx9Pk7OeW7lYu5L+Sv+o1A2atXKxWxR4ZL5cYWyNXlg4coVXB4Z56Y9PVQv6Fs7cz35SrR26UtxoetWr3kt4eX8hFfiZfNXv6rdsvb1v0H6oik56+JWTlvPe23Dq/lb3LDHDblLD9Glisd05lxrTnxIdJx8+YY1GzdFx4VOjZdt3RQxLWft66Hr1sPO/rLlm8ALM2QbN4X3TXq2k5Zo1t3q0URvW/oyzPv4UaPyCmLzIP1GSL+FoF89G9I/u2HNi+t5U8b0TXqGVE+gE816jwr8Q03d/MYaOe/5eZtzREvlBStkb+YIns+LXhEi2lzIezMPHlgh5L2ZE7HSRw6wR/R6KdGjUeg0PSzwfVY9oGfD4m7Qd7NZ9w/1gF5ngNneX3LdqR7QS3CVXqHoV/h9cjyfleXsBIIseZYQZGVneWu8owt6/vNjiHZN8Gqu506JdBImFAG7uwjgbVxM7gk2zt6ch8yaPne6587+iLqgR98iRh2BaPQYj51RNLpNY778Px89yBsVun11KG/rJnJv3YxZ69mizUs2eGuUt2t6mUxI0COwDHJkUTBKFuL22fiL8t/eqo3dMjU/9m3uwhUbl47Of1u2KH864MxNC5+3RbRgyea/zc9fnb11Xv4CeBaOkC8ErCiO1wb4u6J/MW702Hg5pBf9VwLspm/iLxw7NtbtvsicbW9kL9QuDs0a+crrues2zM6eOyN3+7Y3cgFnUcL2sQnbZxRNWbYudnbY3PhVHixtnatL+vi8aG0CQT8a0uePidaOAbPi3S6JC7euJ0r+1AWvxi6bNZ1LlHxk4UZYrddueHXB5v/eFD5ly9r4EFjyefP7Aj2s9+HT1j+kfyF/w+Zpq92lj948P37J6PjcRRsI+vVRYHns4oLN0+KjQPjo2Nz5sVvCp+Ss1S6QbU0QtNKzFhYK3TxZN9Qd+tEk/Vsk/br8FWvcn2kTrVmTx1lVGCpaUzgqdGYuG4ieyyXi4KFVhaxViwmvx3uuMGpVLn+Vs3ohBd6c1nNFP2t1Hqz3y17Jhxk/Bn1xRvbc/E1rtYuFM1d4MTt8Klf0y7dtQd9aMHrseq5o7Biwfax25bZNHOj1tGOoH4/0jPpkX89noulpeqrtoEY0PU3/2IMsRtfzcn4tV/ScYqbC1/b4Vq7osR1G3y0gokSu6fW+NsfHckWPDmR6ZOdTKp/b41u5oN/F3N1frmY6k6uSX/K0ztfm+Fi016O93uOOoTuM/WreqqPovh59lUO1HdSIpqfpqbaDGnWX3sTs0Oc/NI6c0Hon0Xf3UHla3abveMVTnEhOZb8z3n8HAVzSY0qzBHBsSqWcpOeTIcwsVuI8pQrSz1Sa2QS9Tc2F0VFEeg1AMLPf9JFc0e9k7nnXyHtvX8r7e3FILyBDmv3MfXtUc5hJoJg5OYVZCunZH4wLQd6xCIn0F0JZB54p8zWFu3JBHz1xOFuAlzyth9e66ZC+hOkMMY0AhIlxUJysAgcOygn6RIJe9qEBiCboAWbvD3kfPSEdbj96qgyED1NA+o+SYWiiwrSv1QMQ9R7GOenBAUv0BCaU1JfW91Yu6Q0AsD9iHm/Ne+J/IEIEPcJgQ3o5OETm/aHEEM4VSN8ikdg1gMHwm0ERV/X+EPPjw0bRsCPK98bJYYu3a+IRZWqinPT+u8h6v/cTZgvh9XYyPz7KtAjfSf678thx5NN+Ue+B4HBKOQ5EFSmVoQCrcbSGTOUOAEQn9KBKujPFqgEnS7n8kyn6nVYhTJ+iA8ine313G3Ev5fm+Xvgw/xkT8Ty9yeg31Z7u59P0NP0AlAt6ltjcX9bldSYX9PwzTP9pu9yTy97OlVP+e+neLbmkP9pC0/djuaJn7Uw2+++YXXfkssWb8/Rpv7lgcUuu6HlHLe7fguMXout95/QDuMVDqt4fwPT81PL+7fPoqxyanqYfiKLpaXqq7aBGND1NT6UNHHsnHWoUZ9s1nSZF2hxjubdmgFp6VoZVXSedOSkUBm26DjNgJZNkn1W3i3mYlHf24bGIz9PcOT+19Eijcpz1opNerHpAf+a48xMb355e1CZpWBt6QXt65PLxbpyf6pJPmI1N+nulDgnS8zMqidUiiO2gBYZPl8pLCHq0pvI4YNSUib4INZX+lRSxVRr4Z63lpUL4L8CvwZ/BKk9LhVh5ZZmtslSDBB20VHMyKltcPw2NanqiyJZESg8P59RKTYnnSGPFX5bipuH2EwqSvmq8AwdoxfGqyOO1ipmRejJpyaRzZ/MqWpT1MIdN481XZZ+noWZbYtrJ4Q77l6ccEvgbRrxqt/nweJcDk5TQsx/e4hkO6WHJ338eInEzatLJyNTj4KRFXacnSz5aVwlLeK2xpsZaXiZyJk03DQcM/tnqsAodACcNgAHz3mRVJqbBxGlYTYscsL6Cv6Fw+onORQU9Ln248pHMeyeSArNWnCezKtWiKtmrtqpIr2ezfmngAuxSS9a43aF/JRUlWpvzzlajFXqY9xespUWfp9W21E1Ks9XVl6prLqkA46sWFTxQkeRyMYHv6TV6Q5sntYU1yAHaIMT00JVharVzOAVT40CsVqvQi1GNDkx9EcbyM3T8BhVAL4aQSWESHavRwW/ECSeoVvEb5Ay1rlEuVl/kK9WwSUAwtQMRq7t4Jpyv6SV6g77vPKHPt/RsnUHad9h9S89WGaRuPo/TS/IhPS5VqPrYgiaf0UP2XtzZieq8MqHoq/flPOLoXdkjeexuyXivzKn5hJ6rS+quoz+T/uhua2+95Ly/0ktUnTt6spvHsEVeKLNFjjNykdpL49L5J55JhJ0YTm1kS83ecdX3FaBWAenJBB42zev0bJVU0fkzp8meK+NEqQNt1tmaywDj63RJ1W4NBjuoaL1RI4G7JecFlWUl54uadeJ6Ty9/9jY9LjW4eoQBSc9FMyzmI2qzWePs4ieBXZPy4MVOxnA57K2jFdaW0JLzWc0XyQQelZfflSQ16Fw+tAb9cu+e84ya+guOGssReHECUi/osW+OHFSwAVZZv9uReqEa1EamQ68nq9l7xOLpeUVv0kv0rS8H61yI3azBEbsdZ6NwQzyz1K4BMCQhBrHsOLlLFATUzoUJ7J5eP+jFN0XBHr0nbtBBqpK8No/uLXqGSuGhXi0i8d6VgZfocYXCH57X4hV6gr2P9egfLy/Qd7tXS708Tu9H7B6nl+gUfWr4ogt5ll6lUPSt4Ysu5Cl6lR726GEj5xfO7oE8RC+R4l32avugPESvV+j9j91T9LjBIMX9D94z9Gy9wZCU5Ff3njvl8u4EcbvGi2Xv2Jpx7ByczSC8HaftCgKOnWHvvgfktD9Tm2i0w9oGFva41KbJeI+XMLhen0/eUhtx2NgaIWg3m04o4tuR46OqDFHtVhAIvhg5XuN8I0pJRUrb0Vyk/XtSiNRnjDMrO843io7pAfhuXPsD6JVzh891SLzTUjSRNEBU0e3B407p+bYdW44S2GGXfxneGsd7lB41Q8m+yP4iyqZgt1tBwKvM/lZTa4Stfwmz/JPmNgDYxI7jU4JUo6ih48W74Bjk+C6x/YAm74rO5mgbgX1/CoB30sNJetM3E9PBp6e71e/ohB4Rfb1HF/Z9yrvNcpbkEEEflnFEEfZZNVZpKZVj5UeOm4602MsrT1/VMNgSls1SbsGJFQSlUVUKgDVbqgGMBoyM00bhpy1CwAAlP0zWRZw90VTKOcNMLou+3GQV7rz6NfE/nGyarOelVhd8E7Kzqan+k6up9SoitR6UTE5pIugjf3TGGImkRhhKeffc4eoSywf1OrAffiX38J6rQrArUh4+8ccmaxRL8mE6YFVN7s4C807o0R272SDse4tyRzoAJL1pkqMm77Nq1I59m3Zyt8NeUep4UMsQW4vjRBLv8zTTcGGVIaJZJ25ufSeOKTn9QCn8jE5WVx3M/rClal+ZbYJeeKhU/GF18U9mcUYdjtn/J1KWWr39maKvdYcsnzyluzI8/LLaNtGxw2r7haBn6o/ujki12iamwaTjis5YbcfOpVaXENHoFX3x3k+ZxJ9Y3MINH3aqap8KsD4kRsWJp0O4Sw/CTzAvyo4a+QekrfRVSYABSz52WvltNSOj8jhWZxFfioy8RJyZBTO8avhf9Fi9Va0mCx76vy0q1iFLKJCYniqvq8salib6QYW9n4ZeOV1X5yg+xcZOpKiKT//4DEEfWZTKZOq/2y38ebfofZha/ENZRGvJvzZedAzG4MXlP0YWXdaFXTlHpA+9Np53lMlMR2y/WDQC6CJgyRdNVgEE0ovOHFR3w+l2Wu8RLDXvqDHsilRw4v1kqwRgF8otxDoSS92Falt5fWldzSWVxm7XcEn6veX1xNoZ0yXrlwbe2avlVqLYsTKIq71dE/akNGdd3pNiLXLSDzviKP4ppSav+BQxOyU6tufHZFmqcXvykq/P2bnfXQj5+bwgdU9KuSx1z4mnnV7v50m89+pTyrOOnYZJj/6UMoGgTw69NglNPUf4eXSnEfu/PBAN6fepsIqnf9J/ZOzWtZbLZyvaHBybKixDSTxyCRGrVZxGnNFobtRg6otCsVr3oCVCxCqljs1vkIc1qh0qgDaazW08lUipLAOiDKVZliFHlTjfppbzM5R1csw5AoIpzY1Cm0PUkPXVx4ctWeYokw5EZCjVIaIMhxIWIZFaiJExdSFkUlGGWYzbcOglMTX63seHnU/5OGCA3pD4fQ0K7e3uuBLVq5baqGRiU9Penk1YYcOami4Rr5aJqPDD9XqPiCU2m3s4YI9gvZvh6EP0FIimp+mptoMa0fQ0PdV2UCOanqan2g5qRNPT9FTbQY1oepqeajuoEU1P07v3bbR4SOD1RjYApl8DA4cSY0z7YwIDb/w10F8ymIyNHjy0jz6srFf06J3gzMyYQb+xRSMCMjOH3NSA/UMyMwMChzqH0m8NCYA71/F+Sn878AbM7RE32LcC/w33gn8DvwffBWF3gsmZOuzOzbuAf/vmXZIeCwoK4sI/DH5oiNuog4LuehTELfWGnn/nJjHzyGCDXUOu32VAgduD7tklre8SNcU0wC1LQpR87rUh9+/H3OOafn3ifsxNHPwecP+PQTcoX+TTG/rowf9otZ91OzA4+Cx0AOH/Cg4OrnXm6rUn7/6VbmiU2A5ujbipuRb4G0DFd8MHXxciYurfMtAb+vDBNx/W51u1MDPhJ1pbOxhWAajvhjQ4DxH0+wcH3x8xVIMNDh6UeVdC/ls37L03v5fqVb2/MwjmLq/2Lv/WPZwsCoI/78G6vSuGLNOmEf8kpvFuSCB9xOB/SBh3YJFnmDL/CLzB5otvZ8bcpHxdY6/o98dcDwq6HXhTci34ZlDQn4H/RP4VfC8o6NdBZN7zf4c7VSOC/w3po2OGsk1E3v9xF8Cw4M+h0EtmUr6ysXft/a1fBwUH34cF4HYMrO+wADB+h0U64J5zfpNxe0hwcGYDO3rEUO7twMwnfr2OYx8EZsZcx2H6zIBBDX7t9aBQsVhM+C4EfooJZj78fFCfEedOmNjOZsEQCpPyYBRR4Nsmo050T5emp9oOakTT0/RU20GNaHqanmo7qBFNT9NTbQc1oulpeqrtoEY0PU1PtR3UiKYn6RkDUiR9QOCggakAkn4Aa2DT/z8m4cxFh8FhGAAAAABJRU5ErkJggg==" alt="">
+                </p>
+                <br>
+                <p>
+                    <p>Selection With id</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPNhi7U7Rooyyk7SJiAmoFxkYitgizaWHj1svKiHXrKL4Zly9e6Fh5IhpXe_cfwIT2UwM&usqp=CAU" alt="">
+                </p>
+            </section>
+
+            <section id="box-model">
+                <h2>CSS Box Model</h2>
+                <p>
+                    In CSS, the term "box model" is used when talking about design and layout.
+                    <br>
+                    The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:
+                </p>
+                <br>
+                <img src="https://www.csssolid.com/images/box-model/css-box-model.png" alt="">
+                <br><br>
+
+                <p>Explanation of the different parts:</p>
+                <li>Content - The content of the box, where text and images appear</li>
+                <li>Padding - Clears an area around the content. The padding is transparent</li>
+                <li>Border - A border that goes around the padding and content</li>
+                <li>Margin - Clears an area outside the border. The margin is transparent</li>
+
+            </section>
+
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>
+                    CSS stands for Cascading Style Sheets. It is a language designed to specify the overall appearance of webpages as well as the appearance and structure of the text and elements such as images and buttons on webpages and their layout. Styles can be specified with CSS using internal style sheet definitions which are placed right into HTML/XHTML code or in external files.
+                </p>
+            </section>
+        </div>
+    </div>
+
+    <!-------------------- Footer ------------------->
+    <p class="footer">&copy;2022 Created By <span>Somya Rawat</span></p>
+
+</body>
+</html>
