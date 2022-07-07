@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: whitesmoke;
+        }
+
+        .form{
+            border: 1px solid #fff;
+            border-radius: 10px;
+            background: #fff;
+            padding: 5rem;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+        }
+
+        .box{
+            padding: 2px;
+            margin: 5px;
+            outline: none;
+        }
+
+        .input{
+            display: flex;
+            justify-content: center;
+            margin: 1rem 2rem;
+        }
+
+        .btn{
+            padding:  5px 15px;
+            margin-right: 25px;
+            border: none;
+            border-radius: 5px;
+            align-items: center;
+            font-size: 18px;
+            background: rgb(238, 5, 5);
+            color: #fff;
+        }
+
+        .btn:last-child{
+            margin-right: 0;
+        }
+
+        p{
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="form">
+            <form>
+                Enter 1st Number : <input class="box" type="text" id="first" /><br>
+                Enter 2nd Number : <input class="box" type="text" id="second" /><br>
+                <div class="input">
+                    <input class="btn" type="button" onClick="multiplyBy()" Value="Multiply" />
+                    <input class="btn" type="button" onClick="divideBy()" Value="Divide" />
+                </div>
+            </form>
+            
+            <p>The Result is : 
+                <span id = "result"></span>
+            </p>
+        </div>
+    </section>
+    
+    
+    <script type="text/javascript"  src="./mul_div.js"></script>
+</body>
+</html>
