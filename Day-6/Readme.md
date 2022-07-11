@@ -146,3 +146,8 @@ With the object model, JS gets all the power it needs to create dynamic web page
 ### 11. Why do we need DOM ?
 
 DOM allows JS to be powerful enought to access and change everything that can be changed in a HTML document i.e. we can change the Styling, create new elements, etc. Being able to use DOM gives the programmer infinite possibilities and thus allows a programmer to be able to create truly dynamic web pages.     
+
+<hr>
+<hr>
+
+## Programs -
