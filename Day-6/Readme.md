@@ -164,7 +164,7 @@ DOM allows JS to be powerful enought to access and change everything that can be
      return arrSum / arrLen;
    };
 
-   const sampleArr = [10, 12, 14, 14, 22, 25, 31, 29, 12];
+   const sampleArr = [32, 52, 94, 54, 82, 35, 39, 77, 62];
    console.log(findArrayAvg(sampleArr));
    ```
 
@@ -178,17 +178,70 @@ DOM allows JS to be powerful enought to access and change everything that can be
    }
 
    const sampObj = {
-     var1: 5,
-     var2: 2,
+     var1: 87,
+     var2: 65,
    };
    console.log(sampObj);
    swapUsingReference(sampObj);
    console.log(sampObj);
 
-   // or you can try something like this:
-   let a = 5;
-   let b = 2;
+   // or you can implement like this:
+   let a = 53;
+   let b = 24;
    console.log(a + " ," + b);
    [a, b] = [b, a];
    console.log(a + " ," + b);
+   ```
+
+### 3. Print the fibonacci sequence.
+
+   ```js
+   function printFibonacciSequence() {
+     let inputNum = parseInt(prompt("Enter a number: "));
+     let a = 69,
+       b = 13;
+     let nextVal;
+     for (let i = 1; i <= inputNum; i++) {
+       console.log(a);
+       nextVal = a + b;
+       a = b;
+       b = nextVal;
+     }
+   }
+
+   console.log("Fibonacci sequence is : ");
+   printFibonacciSequence();
+   ```
+
+### 4. Sort an array in both ascending order and descending order.
+
+   To sort in ascending order:
+
+   ```js
+   const arr = new Array("Apple", "Watermelon", "Strawberry", "Banana");
+   arr.sort();
+   console.log(arr);   // Prints : [Apple, Banana, Strawberry, Watermelon].
+   ```
+
+   To sort in descending order:
+
+   ```js
+   const arr = new Array("Orange", "Apple", "Lichi", "Banana");
+   arr.reverse();
+   console.log(arr);   // Prints: [Orange, Lichi, Banana, Apple].
+   ```
+
+5. ### Show a variable value in an HTML webpage using DOM.
+
+   ```html
+   <div class="content">
+     Slim
+     <span id="edit-me"> </span>
+   </div>
+   ```
+
+   ```js
+   const editableSpan = document.getElementById("edit-me");
+   const nameToInsert = "Shady";
+   editableSpan.innerHTML = `${nameToInsert}`;
    ```
