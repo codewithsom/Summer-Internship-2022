@@ -43,3 +43,10 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
       console.log(a);
       let a = 3; // Uncaught ReferenceError: a is not defined.
       ```
+  
+
+### 3.  Why do prefer _const_ over _var_?
+
+If you wish for a variable to be re-definable, one can prefer using var.
+The usage of const makes sure that the variable binding is immutable but the object itself can change whenever you like.
+
