@@ -72,9 +72,9 @@ To create a sample object:
 
 An array is a special variable, that can hold more than one value. In Programming languages such as C++, Java,etc. Arrays are generally collection of similar types of data. Arrays in JS are also objects.
 
-    - Arrays in JS are resizable and can contain a mix of different data types.
-    - JS arrays are not associative arrays.
-    - Arrays in JS are zero-indexed.
+- Arrays in JS are resizable and can contain a mix of different data types.
+- JS arrays are not associative arrays.
+- Arrays in JS are zero-indexed.
 
 To create a sample array in JS.
 
