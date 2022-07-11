@@ -116,18 +116,4 @@ To implement call by value, see the code snippet below:
 As you can see, the value of the `originalVal` variable did not change,      rather it was a copy of the original variable, whose value gets changed.
 <br>
 
- To implement call by reference, see the code snippet below:
-
- ```js
- let myObj = {
- val: 10,
- };
-
- function updateVal(objRef) {
- objRef.val += 10;
- }
-
- console.log(myObj.val); // 10
- updateVal(myObj);
- console.log(myObj.val); // 20
- ```
+     
