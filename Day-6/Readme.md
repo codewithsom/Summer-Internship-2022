@@ -10,7 +10,7 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
 
 -> let is block-scoped i.e. variables defined with let can be only used in the block of definition. In case of var, var are function-scoped i.e. a var declared inside a function can be used anywhere in the function.
 
-      ```js
+      
       function greetUser(userName) {
         let greeting = "Good Morning ";
         if (greeting == "Good Morning") {
@@ -22,5 +22,5 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
         // The error happens because completeMsg is undefined for the
         // current scope.
       }
-      ```
+      
 
