@@ -66,6 +66,6 @@ To create a sample object:
       age: 23,
       jobStatus: "Working",
     };
-    ```
+    
       
 
