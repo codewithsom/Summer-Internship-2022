@@ -103,16 +103,34 @@ To declare a function:
 To implement call by value, see the code snippet below:
 
 ```js
-let originalVal = 10;
+let originalVal = 50;
 function updateOriginalVal(originalVal) {
-originalVal += 10;
+originalVal += 120;
 console.log(originalVal);
 }
 
-updateOriginalVal(originalVal); // 20
-console.log(originalVal); // 10
+updateOriginalVal(originalVal);      // 170
+console.log(originalVal);            // 120
 ```
 
  As you can see, the value of the `originalVal` variable did not change, rather it was a copy of the original variable, whose value gets changed.
+ 
+ <br>
+
+To implement call by reference, see the code snippet below:
+
+```js
+let myObj = {
+val: 10,
+};
+
+function updateVal(objRef) {
+objRef.val += 10;
+}
+
+console.log(myObj.val); // 10
+updateVal(myObj);
+console.log(myObj.val); // 20
+```
 
      
