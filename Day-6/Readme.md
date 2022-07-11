@@ -58,13 +58,14 @@ Using JavaScript, we can transform a website from having very basic functionalit
 
 Objects are one of the available data types in JS. It is used to store various keyed collections and more complex entities. Objects can be created using the `Object()` constructor.
 
-    To create a sample object:
+To create a sample object:
 
-     ```js
-        const person = {
-        name: "John Doe",
-        age: 52,
-        jobStatus: "Retired",
-        };
+  ```js
+    const person = {
+      name: "John Doe",
+      age: 52,
+      jobStatus: "Retired",
+    };
+    ```
       ```
 
