@@ -31,17 +31,17 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
       var s = 92;      // 92
 
       let r = 125;
-      let r = 433; // Throws error.
+      let r = 433;     // Throws error.
       ```
 
   - _let_ doesn't allow hoisting whereas var allows hoisting.
 
       ```js
       console.log(z);
-      var z; // undefined.
+      var z;           // undefined.
 
       console.log(q);
-      let q = 39; // Uncaught ReferenceError: q is not defined.
+      let q = 39;     // Uncaught ReferenceError: q is not defined.
       ```
   
 
@@ -53,4 +53,18 @@ The usage of const makes sure that the variable binding is immutable but the obj
 ### 4. What is the use of JavaScript in Web Browsers ?
 
 Using JavaScript, we can transform a website from having very basic functionality to be whatever we wish to be. In terms of human analogy, JavaScript is the brain of the website.
+
+### 5. What are Objects?
+
+Objects are one of the available data types in JS. It is used to store various keyed collections and more complex entities. Objects can be created using the `Object()` constructor.
+
+    To create a sample object:
+
+    ```js
+    const person = {
+      name: "Roman Reigns 👆",
+      age: 35,
+      jobStatus: "Working",
+    };
+    ```
 
