@@ -121,16 +121,28 @@ To implement call by reference, see the code snippet below:
 
 ```js
 let myObj = {
-val: 10,
+val: 25,
 };
 
 function updateVal(objRef) {
 objRef.val += 10;
 }
 
-console.log(myObj.val); // 10
+console.log(myObj.val); // 25
 updateVal(myObj);
-console.log(myObj.val); // 20
+console.log(myObj.val); // 35
 ```
 
-     
+### 9. What are primitive data types in JavaScript ?
+
+A primitive data type is a data type that is not an object and has no methods or properties. There are 7 primitive data types in JS: string, number, bigint, boolean, undefined, symbol and null.
+
+### 10. What is DOM ?
+
+DOM stands for Document Object Model, with the help of DOM JS can access and change all the elements of a HTML document. It is constructed as a tree of Objects.
+
+With the object model, JS gets all the power it needs to create dynamic web pages.
+
+### 11. Why do we need DOM ?
+
+DOM allows JS to be powerful enought to access and change everything that can be changed in a HTML document i.e. we can change the Styling, create new elements, etc. Being able to use DOM gives the programmer infinite possibilities and thus allows a programmer to be able to create truly dynamic web pages.     
