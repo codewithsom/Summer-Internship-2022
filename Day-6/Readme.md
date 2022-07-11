@@ -8,3 +8,19 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
 
 ### 2. What is the difference between  _let_ and _var_ ?
 
+-> let is block-scoped i.e. variables defined with let can be only used in the block of definition. In case of var, var are function-scoped i.e. a var declared inside a function can be used anywhere in the function.
+
+      ```js
+      function greetUser(userName) {
+        let greeting = "Good Morning ";
+        if (greeting == "Good Morning") {
+          let completeMsg = greeting + userName;
+          console.log(completeMsg);
+        }
+
+        console.log(completeMsg); // This will throw an error.
+        // The error happens because completeMsg is undefined for the
+        // current scope.
+      }
+      ```
+
