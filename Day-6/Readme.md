@@ -12,8 +12,8 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
 
       ```js
       function greetUser(userName) {
-        let greeting = "Hello ";
-        if (greeting == "Hello ") {
+        let greeting = "Good Morning 🙂 ";
+        if (greeting == "Good Morning 🙃 ") {
           let completeMsg = greeting + userName;
           console.log(completeMsg);
         }
@@ -27,21 +27,21 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
   - _let_ doesn't allow us to re-define variables whereas in case of var we can re-define variables.
 
       ```js
-      var b = 5; // 5
-      var b = 2; // 2
+      var s = 68;      // 68
+      var s = 92;      // 92
 
-      let a = 5;
-      let a = 3; // Throws error.
+      let r = 125;
+      let r = 433; // Throws error.
       ```
 
   - _let_ doesn't allow hoisting whereas var allows hoisting.
 
       ```js
-      console.log(b);
-      var b; // undefined.
+      console.log(z);
+      var z; // undefined.
 
-      console.log(a);
-      let a = 3; // Uncaught ReferenceError: a is not defined.
+      console.log(q);
+      let q = 39; // Uncaught ReferenceError: q is not defined.
       ```
   
 
