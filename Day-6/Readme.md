@@ -148,6 +148,47 @@ With the object model, JS gets all the power it needs to create dynamic web page
 DOM allows JS to be powerful enought to access and change everything that can be changed in a HTML document i.e. we can change the Styling, create new elements, etc. Being able to use DOM gives the programmer infinite possibilities and thus allows a programmer to be able to create truly dynamic web pages.     
 
 <hr>
-<hr>
 
 ## Programs -
+
+### 1. Average of array nums in JavaScript.
+
+   ```js
+   const findArrayAvg = (arr) => {
+     let arrSum = 0;
+     arr.forEach((num) => {
+       arrSum += num;
+     });
+
+     let arrLen = arr.length;
+     return arrSum / arrLen;
+   };
+
+   const sampleArr = [10, 12, 14, 14, 22, 25, 31, 29, 12];
+   console.log(findArrayAvg(sampleArr));
+   ```
+
+### 2. Swap variables using reference.
+
+   ```js
+   function swapUsingReference(objRef) {
+     let temp = objRef.var2;
+     objRef.var2 = objRef.var1;
+     objRef.var1 = temp;
+   }
+
+   const sampObj = {
+     var1: 5,
+     var2: 2,
+   };
+   console.log(sampObj);
+   swapUsingReference(sampObj);
+   console.log(sampObj);
+
+   // or you can try something like this:
+   let a = 5;
+   let b = 2;
+   console.log(a + " ," + b);
+   [a, b] = [b, a];
+   console.log(a + " ," + b);
+   ```
