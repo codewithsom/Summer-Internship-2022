@@ -45,8 +45,12 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
       ```
   
 
-### 3.  Why do prefer _const_ over _var_?
+### 3.  Why do prefer _const_ over _var_ ?
 
 If you wish for a variable to be re-definable, one can prefer using var.
 The usage of const makes sure that the variable binding is immutable but the object itself can change whenever you like.
+
+### 4. What is the use of JavaScript in Web Browsers ?
+
+Using JavaScript, we can transform a website from having very basic functionality to be whatever we wish to be. In terms of human analogy, JavaScript is the brain of the website.
 
