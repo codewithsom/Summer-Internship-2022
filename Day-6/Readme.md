@@ -79,7 +79,7 @@ An array is a special variable, that can hold more than one value. In Programmin
 To create a sample array in JavaScript.
 
     ```js
-    const exampleArr = new Array("This", "is", "my", "Laptop");
+     const exampleArr = new Array("This", "is", "my", "Laptop");
     ```
 
  Objects must be used when you wish to access data in a key-value pairing and use arrays when you wish to create a simple list of things.
