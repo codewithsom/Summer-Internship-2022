@@ -76,10 +76,10 @@ An array is a special variable, that can hold more than one value. In Programmin
     - JS arrays are not associative arrays.
     - Arrays in JS are zero-indexed.
 
-    To create a sample array in JS.
+To create a sample array in JS.
 
     ```js
-     const exampleArr = new Array("This", "is", "my", "Laptop");
+       const exampleArr = new Array("This", "is", "my", "Laptop");
     ```
 
  Objects must be used when you wish to access data in a key-value pairing and use arrays when you wish to create a simple list of things.
