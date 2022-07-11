@@ -242,6 +242,6 @@ DOM allows JS to be powerful enought to access and change everything that can be
 
    ```js
    const editableSpan = document.getElementById("edit-me");
-   const nameToInsert = "Shady";
+   const nameToInsert = "War";
    editableSpan.innerHTML = `${nameToInsert}`;
    ```
