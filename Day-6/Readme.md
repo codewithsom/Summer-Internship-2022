@@ -68,4 +68,19 @@ To create a sample object:
     };
    ``` 
       
+### 6. What is an Array and how is it different from an Object in JavaScript?
+
+An array is a special variable, that can hold more than one value. In Programming languages such as C++, Java,etc. Arrays are generally collection of similar types of data. Arrays in JS are also objects.
+
+    - Arrays in JS are resizable and can contain a mix of different data types.
+    - JS arrays are not associative arrays.
+    - Arrays in JS are zero-indexed.
+
+    To create a sample array in JS.
+
+    ```js
+    const exampleArr = new Array("This", "is", "my", "Laptop");
+    ```
+
+ Objects must be used when you wish to access data in a key-value pairing and use arrays when you wish to create a simple list of things.
 
