@@ -102,15 +102,15 @@ To declare a function:
 
 To implement call by value, see the code snippet below:
 
-    ```js
-    let originalVal = 10;
-    function updateOriginalVal(originalVal) {
-      originalVal += 10;
-      console.log(originalVal);
-    }
+```js
+let originalVal = 10;
+function updateOriginalVal(originalVal) {
+originalVal += 10;
+console.log(originalVal);
+}
 
-    updateOriginalVal(originalVal); // 20
-    console.log(originalVal); // 10
-    ```
+updateOriginalVal(originalVal); // 20
+console.log(originalVal); // 10
+```
 
      
