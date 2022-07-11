@@ -62,10 +62,10 @@ To create a sample object:
 
   ```js
     const person = {
-      name: "John Doe",
-      age: 52,
-      jobStatus: "Retired",
+      name: "Mike Wheeler ✊",
+      age: 23,
+      jobStatus: "Working",
     };
     ```
-      ```
+      
 
