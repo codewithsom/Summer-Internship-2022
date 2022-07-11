@@ -8,12 +8,12 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
 
 ### 2. What is the difference between  _let_ and _var_ ?
 
--> _let_ is block-scoped i.e. variables defined with let can be only used in the block of definition. In case of var, var are function-scoped i.e. a var declared inside a function can be used anywhere in the function.
+ - let is block-scoped i.e. variables defined with let can be only used in the block of definition. In case of var, var are function-scoped i.e. a var declared inside a function can be used anywhere in the function.
 
-      
+      ```js
       function greetUser(userName) {
-        let greeting = "Good Morning ";
-        if (greeting == "Good Morning") {
+        let greeting = "Good Morning! ";
+        if (greeting == "Good Morning! ") {
           let completeMsg = greeting + userName;
           console.log(completeMsg);
         }
@@ -22,13 +22,24 @@ Javascript (JS) is a scripting languages, primarily used on the Web. It is used 
         // The error happens because completeMsg is undefined for the
         // current scope.
       }
-      
+      ```
 
--> _let_ doesn't allow us to re-define variables whereas in case of var we can re-define variables.
+    - let doesn't allow us to re-define variables whereas in case of var we can re-define variables.
 
-      var b = 35; // 35
-      var b = 12; // 12
+      ```js
+      var b = 95;      // 95
+      var b = 29;      // 29
 
-      let a = 15;
-      let a = 39; // Throws error.
-    
+      let a = 65;
+      let a = 33; // Throws error.
+      ```
+
+    - let doesn't allow hoisting whereas var allows hoisting.
+
+      ```js
+      console.log(b);
+      var b; // undefined.
+
+      console.log(a);
+      let a = 123; // Uncaught ReferenceError: a is not defined.
+      ```
