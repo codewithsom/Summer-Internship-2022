@@ -102,18 +102,15 @@ To declare a function:
 
 To implement call by value, see the code snippet below:
 
-   ```js
-   let originalVal = 10;
-   function updateOriginalVal(originalVal) {
-    originalVal += 10;
-    console.log(originalVal);
+    ```js
+    let originalVal = 10;
+    function updateOriginalVal(originalVal) {
+      originalVal += 10;
+      console.log(originalVal);
     }
 
     updateOriginalVal(originalVal); // 20
     console.log(originalVal); // 10
     ```
-
-As you can see, the value of the `originalVal` variable did not change,      rather it was a copy of the original variable, whose value gets changed.
-<br>
 
      
