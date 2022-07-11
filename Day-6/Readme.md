@@ -113,7 +113,7 @@ To implement call by value, see the code snippet below:
     console.log(originalVal); // 10
     ```
 
-As you can see, the value of the `originalVal` variable did not change, rather it was a copy of the original variable, whose value gets changed.
+ As you can see, the value of the `originalVal` variable did not change,      rather it was a copy of the original variable, whose value gets changed.
 
  <br>
 
