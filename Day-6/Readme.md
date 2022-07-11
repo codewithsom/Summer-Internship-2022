@@ -100,35 +100,35 @@ To declare a function:
 
 ### 8. How can we implement call by value and call by reference in Javascript?
 
-    To implement call by value, see the code snippet below:
+To implement call by value, see the code snippet below:
 
-    ```js
-    let originalVal = 10;
-    function updateOriginalVal(originalVal) {
-      originalVal += 10;
-      console.log(originalVal);
+   ```js
+   let originalVal = 10;
+   function updateOriginalVal(originalVal) {
+    originalVal += 10;
+    console.log(originalVal);
     }
 
     updateOriginalVal(originalVal); // 20
     console.log(originalVal); // 10
     ```
 
-    As you can see, the value of the `originalVal` variable did not change, rather it was a copy of the original variable, whose value gets changed.
+As you can see, the value of the `originalVal` variable did not change, rather it was a copy of the original variable, whose value gets changed.
 
-    <br>
+ <br>
 
-    To implement call by reference, see the code snippet below:
+ To implement call by reference, see the code snippet below:
 
-    ```js
-    let myObj = {
-      val: 10,
-    };
+ ```js
+ let myObj = {
+ val: 10,
+ };
 
-    function updateVal(objRef) {
-      objRef.val += 10;
-    }
+ function updateVal(objRef) {
+ objRef.val += 10;
+ }
 
-    console.log(myObj.val); // 10
-    updateVal(myObj);
-    console.log(myObj.val); // 20
-    ```
+ console.log(myObj.val); // 10
+ updateVal(myObj);
+ console.log(myObj.val); // 20
+ ```
