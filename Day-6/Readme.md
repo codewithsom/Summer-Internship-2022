@@ -54,7 +54,7 @@ The usage of const makes sure that the variable binding is immutable but the obj
 
 Using JavaScript, we can transform a website from having very basic functionality to be whatever we wish to be. In terms of human analogy, JavaScript is the brain of the website.
 
-### 5. What are Objects?
+### 5. What are Objects ?
 
 Objects are one of the available data types in JS. It is used to store various keyed collections and more complex entities. Objects can be created using the `Object()` constructor.
 
@@ -68,7 +68,7 @@ To create a sample object:
     };
    ``` 
       
-### 6. What is an Array and how is it different from an Object in JavaScript?
+### 6. What is an Array and how is it different from an Object in JavaScript ?
 
 An array is a special variable, that can hold more than one value. In Programming languages such as C++, Java,etc. Arrays are generally collection of similar types of data. Arrays in JS are also objects.
 
@@ -84,3 +84,16 @@ To create a sample array in JavaScript.
 
  Objects must be used when you wish to access data in a key-value pairing and use arrays when you wish to create a simple list of things.
 
+### 7. What is a function ?
+
+A function is a block of code that is designed to perform a specific task.
+The usage of a function also helps in re-use of code rather than writing it each time we wish to use it.
+
+To declare a function:
+
+ ```js
+ function nthFibonacci(inpNum) {
+ if (inpNum <= 1) return inpNum;
+ return nthFibonacci(inpNum - 2) + nthFibonacci(inpNum - 1);
+ }
+ ```
