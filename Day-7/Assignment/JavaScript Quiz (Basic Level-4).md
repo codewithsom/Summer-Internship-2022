@@ -152,6 +152,14 @@ let user = {
 user.s1();
 user.s2();
 ```
+
 ```
 Output : Hello undefined
-Welcome to Jaipur 🙂
+	 Welcome to Jaipur 🙂
+```	 
+
+### Availability of arguments objects
+
+Arguments objects are not available in arrow functions, but are available in regular functions.
+
+Example using regular ():-
