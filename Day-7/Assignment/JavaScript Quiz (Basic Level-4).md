@@ -134,3 +134,24 @@ console.log(square(20));
 ```
 Output : 200
 ```
+### Use of this keyword
+
+Unlike regular functions, arrow functions do not have their own `this`.
+
+* For example:-
+```js
+let user = {
+	name: "Jaipur 🙂",
+	s1:() => {
+		console.log("Hello " + this.name); // no 'this' binding here
+	},
+	s2(){	
+		console.log("Welcome to " + this.name); // 'this' binding works here
+	}
+};
+user.s1();
+user.s2();
+```
+```
+Output : Hello undefined
+Welcome to Jaipur 🙂
