@@ -45,5 +45,31 @@
    console.log(greetUser)     // Output :- [Function: greetUser] { number: 7 }
    
    console.log(greetUser.name)      // Output :- greetUser
-   console.log(greetUser.length)     // Output :- 0 (Because the length property returns the number of parameters passed to the function)
+   console.log(greetUser.length)     // Output :- 0 
    ```
+   
+ ### 4. What are Events in Javascript ?
+ 
+   * Events in JS are just specific triggers for something happening in the DOM.
+   * For example, if a particular element is clicked then that is called an Event in JS.
+   * We can also listen to these events happening in the DOM and call a function to execute a block of code if the event happens.
+   * EventListeners are used for that purpose.
+
+
+### 5. What is a string ?
+
+* A string is a sequence of one or more characters that may consist of letters, numbers, or symbols. Strings in JavaScript are primitive data types and immutable, which means they are unchanging.
+
+
+### 6. What is an array ? Is it static or dynamic in Javascript ?
+
+   * An array is an ordered collection of elements.
+   * JavaScript arrays are dynamic in nature. 
+   * This means that there is no pre-defined length of the array.
+   * The size of the array is automatically increased / decreased based on the insertion / deletion of elements from it.
+
+
+### 7. Difference between Map and Set ?
+   *  The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. 
+   * The Set object lets you store unique values of any type, whether primitive values or object references.
+   * The main difference between a Set and a Map in JS is that we can access any element from the Map with a unique key - just like in an array we can access any element with it's index. Whereas, in a Set, we have to iterate over all the items in the set to extract a particular element.
