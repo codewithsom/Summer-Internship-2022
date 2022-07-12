@@ -134,7 +134,7 @@ console.log(square(20));
 ```
 Output : 200
 ```
-### Use of this keyword
+### Use of this keyword :
 
 Unlike regular functions, arrow functions do not have their own `this`.
 
@@ -158,8 +158,26 @@ Output : Hello undefined
 	 Welcome to Jaipur 🙂
 ```	 
 
-### Availability of arguments objects
+### Availability of arguments objects :
 
 Arguments objects are not available in arrow functions, but are available in regular functions.
 
-Example using regular ():-
+* Example using regular ():-
+```js
+let user = {	
+	show(){
+		console.log(arguments);
+	}
+};
+user.show(1, 2, 3);
+```
+
+* Example using arrow () :
+```js
+let user = {	
+		show_ar : () => {
+		console.log(...arguments);
+	}
+};
+user.show_ar(1, 2, 3);
+```
