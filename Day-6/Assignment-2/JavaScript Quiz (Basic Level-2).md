@@ -4,6 +4,6 @@
 
 ### 1. Why do we use functions in JavaScript ?
 
- * Functions are essentially re-usable blocks of code.
-   * Say we would be needing to square a number multiple times in our code. We may write the logic of squaring a number multiple times but that would just make our code unnecessarily lengthy.
-   * Instead, we can just create a function once which defines the logic of squaring a number and use that function multiple times.
+* JavaScript Functions. 
+
+  *JavaScript provides functions similar to most of the scripting and programming languages. In JavaScript, a function allows you to define a block of code, give it a name and then execute it as many times as you want. A JavaScript function can be defined using function keyword.
