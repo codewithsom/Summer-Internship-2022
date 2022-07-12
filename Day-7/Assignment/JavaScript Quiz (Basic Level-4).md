@@ -448,16 +448,9 @@ Codes for the above function are provided below.
 #### Code 1:
 ```js
 <script>
-<!-- creating an object constructor and assigning values to it -->
 const obj1 = { property1: 'initial_data'};
-
-<!--creating a second object which will freeze the properties of the first object-->
 const obj2 = Object.freeze(obj1);
-
-<!-- Updating the properties of the frozen object -->
 obj2.property1 = 'new_data';
-
-<!-- Displaying the properties of the frozen object -->
 console.log(obj2.property1);
 </script>
 ```
@@ -467,27 +460,14 @@ Output : "initial_data"
 #### Code 2:
 ```js
 <script>
-<!-- creating an object constructor and assigning values to it -->
 var obj = { prop: function() {}, name: 'adam' };
-
-<!-- Displaying the properties of the object created -->
 console.log(obj);
-
-<!-- Updating the properties of the object -->
 obj.name = 'billy';
 delete obj.prop;
-<!-- Displaying the updated properties of the object -->
 console.log(obj);
-
-<!-- Freezing the object using object.freeze() method -->
 var o = Object.freeze(obj);
-
-<!-- Updating the properties of the frozen object -->
 obj.name = 'chris';
-
-<!-- Displaying the properties of the frozen object -->
 console.log(obj);
-
 </script>
 ```
 ```
@@ -497,3 +477,5 @@ Output : Object { prop: function () {}, name: "adam" }
 ```
 #### Exceptions : 
  * It causes a TypeError if the argument passed is not an object .
+
+### Programs - 
