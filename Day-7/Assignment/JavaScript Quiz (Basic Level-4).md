@@ -15,3 +15,19 @@ greet();
 
 Output : Welcome to CodeWithSom 😎
 ```
+### 2. Explain strict comparison and Abstract comparison in javascript ?
+
+* The strict equality operator `(===)` checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
+
+* For Example :
+console.log(15 === 72);
+// expected output: false
+
+console.log('hello ☺' === 'hello ☺');
+// expected output: true
+
+console.log('17' ===  17);
+// expected output: false
+
+console.log(0 === false);
+// expected output: false
