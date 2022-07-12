@@ -119,16 +119,18 @@ let square = function(x){
 return (x*x);
 };
 console.log(square(10));
-
+```
+```
 Output : 100
 ```
+
 * Example of arrow functions:-
 ```js
 var square = (x) => {
 	return (x*x);
 };
 console.log(square(20));
-
+```
+```
 Output : 200
 ```
-
