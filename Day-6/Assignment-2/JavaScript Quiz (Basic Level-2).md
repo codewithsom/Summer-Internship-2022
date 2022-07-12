@@ -27,7 +27,8 @@
 * More specifically, a function is a `Function` object.
 * This enables a function in JS to have special properties like the ability to invoke.
 * This also means that a function has certain methods attached to it. Namely `bind()`, `apply()`, `call()`.
-* It also has some properties attached to it since essentially it IS an object. They are :- `name` and `length`
+* It also has some properties attached to it since essentially it IS an object. They are :- `name` and `length`.
+
    ```js
    function greetUser() {
        console.log("Good Morning 😊 ")
