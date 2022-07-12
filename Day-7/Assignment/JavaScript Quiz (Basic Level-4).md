@@ -233,5 +233,22 @@ Here we declare then initialize the value of a `var` after using it. The default
 console.log(num); 	// Returns 'undefined' from hoisted var declaration (not 60)
 var num; 		// Declaration
 num = 60; 		// Initialization
-console.log(num);	 // Returns 6 after the line with initialization is executed.
+console.log(num);	 // Returns 60 after the line with initialization is executed.
 ```
+The same thing happens if we declare and initialize the variable in the same line.
+```js
+console.log(num); 	// Returns 'undefined' from hoisted var declaration (not 6o)
+var num = 60;		 // Initialization and declaration.
+console.log(num); 	// Returns 60 after the line with initialization is executed.
+```
+If we forget the declaration altogether (and only initialize the value) the variable isn't hoisted. Trying to read the variable before it is initialized results in `ReferenceError` exception.
+```js
+console.log(num); 	// Throws ReferenceError exception - the interpreter doesn't know about `num`.
+num = 60; 		// Initialization
+```
+Note however that initialization also causes declaration (if not already declared). The code snippet below will work, because even though it isn't hoisted, the variable is initialized and effectively declared before it is used.
+```js
+a = 'Straw'; // Initialize a
+b = 'berry'; // Initialize b
+
+console.log(a + "" + b); 	// 'Strawberry'
