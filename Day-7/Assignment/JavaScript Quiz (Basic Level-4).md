@@ -87,3 +87,21 @@ console.log(object1 === object2);  // false
 console.log(object1 === object1);  // true
 ```
 ## Abstract Equality Operator `(==)`
+
+The Abstract Equality Operator checks whether two operands are equal and returns true if equal, false otherwise :
+
+* For Example :
+
+```js
+// Prints "true"
+console.log(15 == 15)
+
+// Prints "true"
+console.log(12 == "12")
+
+// Prints "true"
+console.log("41" == "41")
+
+// Prints "true"
+console.log(16 == "16")
+```
