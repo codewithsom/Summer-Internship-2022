@@ -61,5 +61,33 @@
    */
    ```
 
+### 2. Make a "class" based alternative to the object based vector template.
+
+```js
+class Vector {
+	constructor () {
+		this.x = 10
+		this.y = 20
+	}
+
+	set setX(x) {
+		this.x = x
+	}
+
+	set setY(y) {
+		this.y = y
+	}
+
+	create(x, y) {
+		let obj = Object.create(this)
+		obj.setX = x
+		obj.setY = y
+		return obj
+	}
+}
+
+let vec1 = new Vector()
+console.log(vec1.create(31, 32))            // Output:- Vector { x: 31, y: 32 }
+```
 
 
