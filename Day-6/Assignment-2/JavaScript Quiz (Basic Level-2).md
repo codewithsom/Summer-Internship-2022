@@ -73,3 +73,39 @@
    *  The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. 
    * The Set object lets you store unique values of any type, whether primitive values or object references.
    * The main difference between a Set and a Map in JS is that we can access any element from the Map with a unique key - just like in an array we can access any element with it's index. Whereas, in a Set, we have to iterate over all the items in the set to extract a particular element.
+
+### 8. Difference between Array and Map ?
+
+   * The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and primitive values) may be used as either a key or a value. 
+   * The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.
+   * The difference between an Array and a Map is that an Array is just a single collection of elements that can be of any datatype and any unique element can be accessed with an index which is numerical and starts from 0. Whereas, a Map is a collection of key - value pairs and any unique value can only be accessed with it's key which can be of any datatype.
+
+
+### 9. What are array methods? List a few names ?
+
+   * Array methods are different functions that we can call on an array to perform different tasks like sorting the array or iterating through the items of the array.
+   * Some methods of an array are `map()`, `filter()`, `reduce()`, `sort()`, `reverse()`, etc.
+
+
+### 10. In how many ways can we traverse through an array in Javascript ?
+
+* Here are some of the ways to traverse an array in JS :- 
+   ```js
+   const arr = [7, 8, 9, 10, 11, 12]
+   
+   for(let i = 0; i < arr.length; i ++) {
+       console.log(arr[i])
+   }
+   
+   for (let num of arr) {
+       console.log(num)
+   }
+   
+   for (let num in arr) {
+       console.log(num)
+   }
+   
+   arr.forEach((item) => console.log(item))
+   
+   arr.map(num => console.log(num))
+   ```
