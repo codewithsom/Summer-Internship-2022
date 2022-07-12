@@ -63,11 +63,24 @@ console.log(true === false);        // false
 
 console.log(null === null);         // true
 ```
-## Comapring operands of different type :
+## Comapring operands of different types :
 ```js
 console.log("31" === 31);           // false
 
 console.log(true === 1);           // false
 
 console.log(null === undefined);   // false
+```
+## Comparing Objects :
+```js
+const object1 = {
+  name: "Hi 🙂"
+}
+
+const object2 = {
+  name: "Hi 🙂"
+}
+
+console.log(object1 === object2);  // false
+console.log(object1 === object1);  // true
 ```
