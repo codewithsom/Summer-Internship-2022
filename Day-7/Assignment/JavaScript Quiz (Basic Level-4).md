@@ -384,3 +384,32 @@ newEmployee.salary = 70000;
 console.log("Employee=> ", employee);
 console.log("New Employee=> ", newEmployee);
 ```
+
+### 7. What is Object.freeze ?
+#### Object and Object Constructors in JavaScript :
+In the living world of object-oriented programming we already know the importance of classes and objects but unlike other programming languages, JavaScript does not have the traditional classes as seen in other languages. But JavaScript has objects and constructors which work mostly in the same way to perform the same kind of operations. 
+* Constructors are general JavaScript functions which are used with the “new” keyword. Constructors are of two types in JavaScript i.e. built-in constructors(array and object) and custom constructors(define properties and methods for specific objects).
+* Constructors can be useful when we need a way to create an object “type” that can be used multiple times without having to redefine the object every time and this could be achieved using the Object Constructor function. It’s a convention to capitalize the name of constructors to distinguish them from regular functions.
+For instance, consider the following code :
+```
+
+function Automobile(color) {
+  this.color=color;
+}
+
+var vehicle1 = new Automobile ("pink");
+```
+The function “Automobile()” is an object constructor, and its properties and methods i.e “color” is declared inside it by prefixing it with the keyword “this”. Objects defined using an object constructor are then made instants using the keyword “new”. 
+When new Automobile() is called, JavaScript does two things: 
+* It creates a fresh new object(instance) Automobile() and assigns it to a variable.
+* It sets the constructor property i.e “color” of the object to Automobile.
+
+### Object.freeze() Method :
+Among the Object constructor methods, there is a method Object.freeze() which is used to freeze an object. Freezing an object does not allow new properties to be added to an object and prevents from removing or altering the existing properties. Object.freeze() preserves the enumerability, configurability, writability and the prototype of the object. It returns the passed object and does not create a frozen copy.
+Applications: 
+* Object.freeze() is used for freezing objects and arrays.
+* Object.freeze() is used to make an object immutable.
+Syntax: 
+```
+Object.freeze(obj)
+```
