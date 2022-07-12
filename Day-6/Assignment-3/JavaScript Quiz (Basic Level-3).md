@@ -13,50 +13,51 @@
 * For Example :-
    ```js
    const myObj = {
-      'first': 1,
-      'second': 'two',
+      'first': 7,
+      'second': 'seven',
       'third': {
-         "name": "Kshipra",
-         "age": 19
+         "name": "Roman",
+         "age": 30
       },
-      'fourth': [1, 2, 3, 4]
+      'fourth': [71, 72, 73, 74]
    }
    ```
    * We can access any element with this syntax `objectName.keyName` or `objectName['keyName']`
    * We can iterate through the keys in any object in the following two ways :-
    ```js
    for (let myObjKey in myObj) {
-       console.log(myObjKey) // Output :- first \n second \n third \n fourth
+       console.log(myObjKey)                 // Output :- first \n second \n third \n fourth
    }
    
-   console.log(Object.keys(myObj)) // Output :- ['first', 'second', 'third', 'fourth']
+   console.log(Object.keys(myObj))              // Output :- ['first', 'second', 'third', 'fourth']
    ```
     * We can iterate through the values in any object in the following two ways :-
    ```js
    for (let myObjKey in myObj) {
-       console.log(myObj[myObjKey]) // Output :- 1 \n 	two \n 	{ name: 'Kshipra', age: 19 } \n  [ 1, 2, 3, 4 ]
+       console.log(myObj[myObjKey])             // Output :- 7 \n 	seven \n 	{ name: 'Roman', age: 30 } \n  [ 71, 72, 73, 74 ]
    
    }
    
-   console.log(Object.values(myObj)) // Output :- [ 1, 'two', { name: 'Kshipra', age: 19 }, [ 1, 2, 3, 4 ] ]
+   console.log(Object.values(myObj))            // Output :- [ 7, 'seven', { name: 'Roman', age: 30 }, [ 71, 72, 73, 74 ] ]
    ```
    * We can extract only the values we need from an object by destructuring it. Example :- 
    ```js
    let { first, second } = myObj
    
-   console.log(first, second) // Output:- 1 two
+   console.log(first, second)                      // Output:- 7 seven
    ```
    * We can convert the object to an array and then traverse it with a `forEach()` method like this :- 
    ```js
    console.log(Object.entries(myObj))
+   
    /*
-   Output :-
-   [
-       [ 'first', 1 ],
-       [ 'second', 'two' ],
-       [ 'third', { name: 'Kshipra', age: 19 } ],
-       [ 'fourth', [ 1, 2, 3, 4 ] ]
-   ]
+    Output :-
+      [
+          [ 'first', 7 ],
+          [ 'second', 'seven' ],
+          [ 'third', { name: 'Roman', age: 30 } ],
+          [ 'fourth', [ 71, 72, 73, 74 ] ]
+      ]
    */
    ```
 
