@@ -162,7 +162,7 @@ Output : Hello undefined
 
 Arguments objects are not available in arrow functions, but are available in regular functions.
 
-* Example using regular ():-
+* Example using regular () :
 ```js
 let user = {	
 	show(){
@@ -180,4 +180,23 @@ let user = {
 	}
 };
 user.show_ar(1, 2, 3);
+```
+### Using new keyword :
+
+Regular functions created using function declarations or expressions are ‘constructible’ and ‘callable’. Since regular functions are constructible, they can be called using the ‘new’ keyword. However, the arrow functions are only ‘callable’ and not constructible. Thus, we will get a run-time error on trying to construct a non-constructible arrow functions using the new keyword.
+
+* Example using regular function :
+```js
+let x = function(){
+	console.log(arguments);
+};
+new x =(1,2,3);
+```
+
+* Example using arrow function :
+```js
+let x = ()=> {
+	console.log(arguments);
+};
+new x(1,2,3);
 ```
