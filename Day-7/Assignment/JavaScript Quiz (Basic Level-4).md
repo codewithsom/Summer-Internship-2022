@@ -446,7 +446,7 @@ Output : Object { prop: function () {}, name: "adam" }
 
 Codes for the above function are provided below.
 #### Code 1:
-```js
+```html
 <script>
 <!-- creating an object constructor and assigning values to it -->
 const obj1 = { property1: 'initial_data'};
