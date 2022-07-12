@@ -479,3 +479,18 @@ Output : Object { prop: function () {}, name: "adam" }
  * It causes a TypeError if the argument passed is not an object .
 
 ### Programs - 
+
+### 1. Write a function that generates a random number between two ranges, -100 to 0 and800 - 900.
+```js
+function radomInRange(min, max) {  
+    return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+const rndNum1 = radomInRange(-100, 0);
+const rndNum2 = radomInRange(800, 900);
+console.log(rndNum1);
+console.log(rndNum2);
+```
+```
+Output : -99
+	 778
