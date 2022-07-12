@@ -105,3 +105,9 @@ console.log("41" == "41")
 // Prints "true"
 console.log(16 == "16")
 ```
+As you should notice, the operator returns true even if the type of the operands does not match, as in the second and fourth examples.
+
+This is how it works - First, the operands are converted to the same type, then a comparison is performed.
+
+### 3. Difference between arrow functions and regular functions ?
+
