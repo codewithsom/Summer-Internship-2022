@@ -12,4 +12,6 @@ var greet = function () {
 
 greet();
 </script>
+
+Output : Welcome to CodeWithSom 😎
 ```
