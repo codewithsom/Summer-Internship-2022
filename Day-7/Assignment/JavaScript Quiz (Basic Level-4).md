@@ -409,7 +409,8 @@ Among the Object constructor methods, there is a method Object.freeze() which is
 Applications: 
 * Object.freeze() is used for freezing objects and arrays.
 * Object.freeze() is used to make an object immutable.
-Syntax: 
+
+- Syntax: 
 ```
 Object.freeze(obj)
 ```
