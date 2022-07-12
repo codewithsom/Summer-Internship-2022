@@ -37,7 +37,7 @@ console.log(0 === false);
 
 The strict equality operators `(=== and !==)` use the IsStrictlyEqual Abstract Operation to compare two operands.
 
-	* If the operands are of different types, return `false`.
+* If the operands are of different types, return `false`.
 	* If both operands are objects, return `true` only if they refer to the same object.
 	* If both operands are `null` or both operands are undefined, return `true`.
 	* If either operand is `NaN`, return `false`.
