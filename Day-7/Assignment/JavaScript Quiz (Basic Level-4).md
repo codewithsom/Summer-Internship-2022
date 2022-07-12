@@ -20,6 +20,7 @@ Output : Welcome to CodeWithSom 😎
 * The strict equality operator `(===)` checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
 
 * For Example :
+```js
 console.log(15 === 72);
 // expected output: false
 
@@ -31,3 +32,4 @@ console.log('17' ===  17);
 
 console.log(0 === false);
 // expected output: false
+```
