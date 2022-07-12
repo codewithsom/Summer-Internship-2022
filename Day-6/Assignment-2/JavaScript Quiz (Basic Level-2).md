@@ -19,3 +19,30 @@
    
    demo()         // Function is invoked. Output : "JavaScript is Amazing 😀"
    ```
+
+### 3. Does a function behave like an object in Javascript? Prove it by an example.
+
+* Yes, in JS, a function does indeed behave like an object. 
+* This is because essentially, a function IS an object but with special properties and methods.
+* More specifically, a function is a `Function` object.
+* This enables a function in JS to have special properties like the ability to invoke.
+* This also means that a function has certain methods attached to it. Namely `bind()`, `apply()`, `call()`.
+* It also has some properties attached to it since essentially it IS an object. They are :- `name` and `length`
+   ```js
+   function greetUser() {
+       console.log("Good Morning 😊 ")
+   
+       console.log("Welcome! to India")
+   }
+   
+   greetUser()        // Output :- Good Morning 😊
+   
+   console.log(greetUser)     // Output :- [Function: greetUser]
+   
+   greetUser.number = 7
+   
+   console.log(greetUser)     // Output :- [Function: greetUser] { number: 7 }
+   
+   console.log(greetUser.name)      // Output :- greetUser
+   console.log(greetUser.length)     // Output :- 0 (Because the length property returns the number of parameters passed to the function)
+   ```
