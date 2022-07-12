@@ -280,3 +280,62 @@ The result of the code above is: "My dog's name is Bob"
 ### Function and class expression hoisting :
 * Function expressions and class expressions are not hoisted.
 * The expressions evaluate to a function or class (respectively), which are typically assigned to a variable. In this case the variable declaration is hoisted and the expression is its initialization. Therefore the expressions are not evaluated until the relevant line is executed.
+
+### 5. JavaScript is a garbage collected programming language. Explain how ?
+## Garbage Collection in JavaScript:
+### Memory Life Cycle :  The memory life cycle is pretty much the same for any programming language, it has 3 major steps.
+* Allocate the memory.
+* Use the allocated memory either to read or write or both.
+* Release the allocated memory when it is no longer required.
+
+##### An overview behind garbage collection: 
+* The majority of memory management issues occur when we try to release the allocated memory. The main concern that arises is the determination of unused memory resources. In case of the low-level languages where the developer has to manually decide when the memory is no longer needed, high-level languages such as JavaScript use an automated form of memory management known as Garbage Collection(GC).
+
+##### Garbage Collection: 
+* The below section will explain the concepts that are necessary to understand the main garbage collection algorithms and their limitations. The main concept of the algorithms designed for garbage collection is the concept of reference. An object can have a reference to another object if the previous object has access to the latter. For example, a JavaScript object can have an implicit reference(when the reference is to its prototypes) and explicit( when the reference is to its properties values).
+* Below we will explain the algorithms used for Garbage Collection.
+
+###### 1. Reference-counting garbage collection: 
+* This algorithm is considered to be the most basic kind of garbage collection algorithm. What these algorithms do is that rather than determining whether any resource is important or not it scans the memory to determine if an object has any other objects referring to it. An object with zero references is considered to be garbage or “collectible”.
+* For Example :
+```js
+// Consider the following example
+var object_1 = {
+	object_2: {
+		object_3: 7
+	}
+};
+var object_4 = object_1;
+object_1 = 1;
+var object_5 = object_4.object_2;
+object_4 = "Wisflux Academy";
+
+object_5 = null;
+```
+Obstructions: Circular references
+Limitations arise when it comes to circular references. A circular reference occurs when two objects are created with properties that refer each other, thus creating a cycle. 
+The reference-counting algorithm fails to reclaim the these memory resources as each object has at least one reference pointing to them which prevents both the objects from being marked for garbage collection. Circular references are one of the major cause for memory leaks.
+Below example shows an instance of said case.
+```js
+function Demo() {
+	var one = {};
+	var two = {};
+
+	// one reference to two
+	one.object = two;
+
+	// two reference to one
+	two.object = one;
+
+	return 'circular';
+}
+
+Demo();
+```
+###### 2. Mark-and-sweep-algorithm: 
+* This algorithm modifies the problem statement from the “object being no longer needed” to the object being “unreachable”. This algorithm demands a prerequisite of the knowledge of roots which are a set of objects. In JavaScript, a root is a global object. On a regular basis, the garbage collector starts from these roots and finds all the objects that are referenced from these roots, then all objects referenced from these, etc. Starting from the roots, the garbage collector will find all the objects that are reachable and mark all the non-reachable objects.
+
+Cycles are no longer problem: After the function call returns, the two objects are no longer referenced by any resource that is reachable from the root or global object. Hence, these will be marked as unreachable by the garbage collector and have their allocated memory reclaimed.
+
+Some Limitations: The only limitation that can be found is that it is not possible to explicitly or programmatically trigger garbage collector in JavaScript.
+Hence if there are cases when it would be convenient to manually program when to release memory, there are no provisions in JavaScript to trigger such an event.
