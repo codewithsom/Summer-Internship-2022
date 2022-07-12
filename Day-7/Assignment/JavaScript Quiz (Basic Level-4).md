@@ -252,3 +252,31 @@ a = 'Straw'; // Initialize a
 b = 'berry'; // Initialize b
 
 console.log(a + "" + b); 	// 'Strawberry'
+```
+#### `let` and `const` Hoisting :
+Variables declared with `let` and `const` are also hoisted but, unlike var, are not initialized with a default value. An exception will be thrown if a variable declared with `let` or `const` is read before it is initialized.
+```js
+console.log(num); 	// Throws ReferenceError exception as the variable value is uninitialized
+let num = 6; 		// Initialization
+```
+Note that it is the order in which code is executed that matters, not the order in which it is written in the source file. The code will succeed provided the line that initializes the variable is executed before any line that reads it.
+
+#### `class` Hoisting :
+Classes defined using a class declaration are hoisted, which means that JavaScript has a reference to the class. However the class is not initialized by default, so any code that uses it before the line in which it is initialized is executed will throw a `ReferenceError`.
+
+### Function Hoisting :
+One of the advantages of hoisting is that it lets you use a function before you declare it in your code.
+```js
+dogName("Bob");
+
+function dogName(name) {
+  console.log("My dog's name is " + name);
+}
+/*
+The result of the code above is: "My dog's name is Bob"
+*/
+```
+
+### Function and class expression hoisting :
+* Function expressions and class expressions are not hoisted.
+* The expressions evaluate to a function or class (respectively), which are typically assigned to a variable. In this case the variable declaration is hoisted and the expression is its initialization. Therefore the expressions are not evaluated until the relevant line is executed.
