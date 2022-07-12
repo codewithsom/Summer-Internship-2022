@@ -200,3 +200,29 @@ let x = ()=> {
 };
 new x(1,2,3);
 ```
+
+### 4. What is Hoisting in JavaScript ?
+
+## JavaScript Hoisting :
+* JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+* Hoisting allows functions to be safely used in code before they are declared.
+* Variable and class declarations are also hoisted, so they too can be referenced before they are declared. Note that doing so can lead to unexpected errors, and is not generally recommended.
+
+* For Example :
+```js
+// using test before declaring
+console.log(test);   // undefined
+var test;
+```
+The above program works and the output will be `undefined`. The above program behaves as,
+```js
+// using test before declaring
+var test;
+console.log(test); // undefined
+```
+Since the variable `test` is only declared and has no value, `undefined` value is assigned to it.
+
+### Variable Hoisting :
+* Hoisting works with variables too, so you can use a variable in code before it is declared and/or initialized.
+* However JavaScript only hoists declarations, not initializations! This means that initialization doesn't happen until the associated line of code is executed, even if the variable was originally initialized then declared, or declared and initialized in the same line.
+* Until that point in the execution is reached the variable has its default initialization (`undefined` for a variable declared using `var`, otherwise uninitialized).
