@@ -18,6 +18,8 @@ Output : Welcome to CodeWithSom 😎
 ```
 ### 2. Explain strict comparison and Abstract comparison in javascript ?
 
+## Strict Equality Operator `(===)`
+
 * The strict equality operator `(===)` checks whether its two operands are equal, returning a Boolean result. Unlike the equality operator, the strict equality operator always considers operands of different types to be different.
 
 * For Example :
@@ -84,3 +86,4 @@ const object2 = {
 console.log(object1 === object2);  // false
 console.log(object1 === object1);  // true
 ```
+## Abstract Equality Operator `(==)`
