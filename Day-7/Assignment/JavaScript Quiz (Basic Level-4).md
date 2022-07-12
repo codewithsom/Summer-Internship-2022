@@ -226,3 +226,12 @@ Since the variable `test` is only declared and has no value, `undefined` value i
 * Hoisting works with variables too, so you can use a variable in code before it is declared and/or initialized.
 * However JavaScript only hoists declarations, not initializations! This means that initialization doesn't happen until the associated line of code is executed, even if the variable was originally initialized then declared, or declared and initialized in the same line.
 * Until that point in the execution is reached the variable has its default initialization (`undefined` for a variable declared using `var`, otherwise uninitialized).
+
+#### `var` Hoisting :
+Here we declare then initialize the value of a `var` after using it. The default initialization of the `var` is `undefined`.
+```js
+console.log(num); 	// Returns 'undefined' from hoisted var declaration (not 60)
+var num; 		// Declaration
+num = 60; 		// Initialization
+console.log(num);	 // Returns 6 after the line with initialization is executed.
+```
