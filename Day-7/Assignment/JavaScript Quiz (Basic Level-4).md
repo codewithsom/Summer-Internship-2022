@@ -63,3 +63,11 @@ console.log(true === false);        // false
 
 console.log(null === null);         // true
 ```
+## Comapring operands of different type :
+```js
+console.log("31" === 31);           // false
+
+console.log(true === 1);           // false
+
+console.log(null === undefined);   // false
+```
