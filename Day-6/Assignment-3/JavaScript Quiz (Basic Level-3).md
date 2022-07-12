@@ -93,7 +93,4 @@ console.log(vec1.create(31, 32))            // Output:- Vector { x: 31, y: 32 }
 
 ### 3. Do you think JavaScript is the language of the future ?
 
-   * Yes. I do think JS is the language of the future.
-   * Currently, there are a lot of weird behaviours of JavaScript that cannot be explained. 
-   * Due to them, JS has been tagged with an infamous saying :- _"There are a lot of ways to shoot yourself in the foot with JavaScript"_
-   * But if these issues are fixed, then surely due to the flexibility of JS, it can become the language of the future.
+* JavaScript is the main powerhouse behind the rapidly evolving Internet. It is the present and will be the future. The rampant development of the high-level programming language asserts to the fact of JavaScript is the future.
