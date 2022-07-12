@@ -111,3 +111,24 @@ This is how it works - First, the operands are converted to the same type, then 
 
 ### 3. Difference between arrow functions and regular functions ?
 
+* Arrow functions – a new feature introduced in ES6 – enable writing concise functions in JavaScript. While both regular and arrow functions work in a similar manner, yet there are certain interesting differences between them, as discussed below.
+
+* Example of regular functions:-
+```js
+let square = function(x){
+return (x*x);
+};
+console.log(square(10));
+
+Output : 100
+```
+* Example of arrow functions:-
+```js
+var square = (x) => {
+	return (x*x);
+};
+console.log(square(20));
+
+Output : 200
+```
+
