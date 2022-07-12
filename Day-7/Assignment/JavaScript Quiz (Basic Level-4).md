@@ -410,7 +410,57 @@ Applications:
 * Object.freeze() is used for freezing objects and arrays.
 * Object.freeze() is used to make an object immutable.
 
-- Syntax: 
+Syntax: 
 ```
 Object.freeze(obj)
+```
+#### Parameters Used: 
+ 
+1. obj : It is the object which has to be freezed.
+* Return Value: 
+Object.freeze() returns the object that was passed to the function.
+Examples of the above function are provided below.
+Examples: 
+```
+Input : const obj1 = { property1: 'initial_data'};
+        const obj2 = Object.freeze(obj1);
+        obj2.property1 = 'new_data';
+        console.log(obj2.property1);
+
+Output : "initial_data"
+```
+```
+Input : var obj = { prop: function() {}, name: 'adam' };
+        console.log(obj);
+        obj.name = 'billy';
+        delete obj.prop;
+        console.log(obj);
+        var o = Object.freeze(obj);
+        obj.name = 'chris';
+        console.log(obj);
+
+Output : Object { prop: function () {}, name: "adam" }
+         Object { name: "billy" }
+         Object { name: "billy" }
+```
+
+Codes for the above function are provided below.
+#### Code 1:
+```js
+<script>
+<!-- creating an object constructor and assigning values to it -->
+const obj1 = { property1: 'initial_data'};
+
+<!--creating a second object which will freeze the properties of the first object-->
+const obj2 = Object.freeze(obj1);
+
+<!-- Updating the properties of the frozen object -->
+obj2.property1 = 'new_data';
+
+<!-- Displaying the properties of the frozen object -->
+console.log(obj2.property1);
+</script>
+```
+```
+Output : "initial_data"
 ```
