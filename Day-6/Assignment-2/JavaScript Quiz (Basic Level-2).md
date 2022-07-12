@@ -109,3 +109,51 @@
    
    arr.map(num => console.log(num))
    ```
+   
+### Programs -
+
+### 1. Reverse an Array in JavaScript
+
+```js
+const arr = [20, 21, 22, 23, 24, 25]
+
+console.log(arr.reverse())      // Output :- [ 25, 24, 23, 22, 21, 20 ]
+```
+
+
+### 2. Explain the properties of the join array method function via program 
+
+```js
+const arr = [11, 12, 13, 14, 15]
+
+console.log(arr.join())                   // Output :- 11,12,13,14,15
+
+console.log(arr.join(' - '))              // Output :- 11 - 12 - 13 - 14 - 15
+
+console.log(arr.join(' , '))               // Output :- 11 , 12 , 13 , 14 , 15
+
+console.log(arr.join(' SR '))              // Output :- 11 SR 12 SR 13 SR 14 SR 15
+```
+
+
+### 3. Show all the values of an array in a html webpage using DOM and forEach method
+
+```js
+const arr = [15, 16, 17, 18, 19]
+
+arr.forEach(item => document.getElementById("arrValues").innerText += item)
+```
+
+
+### 4. Merge sets in JavaScript
+
+```js
+const set1 = new Set([1, 2])
+console.log(set1)                 // Output :- Set(2) { 1, 2 }
+
+const set2 = new Set(["Hello", "😁"])
+console.log(set2)                // Output :- Set(2) { 'Hello', '😁' }
+
+const set3 = new Set([...set1, ...set2])
+console.log(set3)                // Output :- Set(4) { 1, 2, 'Hello', '😁' }
+```
