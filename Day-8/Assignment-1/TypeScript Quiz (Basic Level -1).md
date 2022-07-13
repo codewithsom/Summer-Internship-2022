@@ -154,7 +154,7 @@
    - Define type for each function.
    - Do not use `any` (TS Data Type) type of typescript.
 
-   Code(Js):
+   Code(JavaSript) :
 
    ```js
    var todos = [];
@@ -175,8 +175,9 @@
      return todos[index];
    }
    ```
-   * Solution :
-    ```ts
+   Solution :
+   
+   ```ts
    class Entry {
      name: string;
      description: string;
