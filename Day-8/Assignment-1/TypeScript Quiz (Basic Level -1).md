@@ -60,8 +60,59 @@
    console.log(showVal<number>(999));        // prints 999
    ```
 
-   * The use of Generics has 3 main advantages:
+   * The use of Generics has 3 main advantages :
 
-   1. **Type-safety**: It will allow a variable to store only type of value.
+   1. **Type-safety** : It will allow a variable to store only type of value.
    2. Typecasting is not required.
    3. Compile-Time Checking.
+
+### 3. What is type inferring in TypeScript ?
+
+   In many sitauations, type inference is used to provide type information when no explicit type annotation is provided. It is useful when there are no explicit type annotation available.
+
+   For example :
+
+   ```ts
+   function sum(a: number, b: number) {
+     return a + b;
+   }
+
+   let add: number = sum(100, 200);    // Compiled.
+   let subtract: string = sum(100, 200); // Compilation error.
+   ```
+   
+### 4. What are the possible ways to define typing for functions ?
+
+   There are multiple ways to define types for functions:
+
+   1. **Method Signatures**:
+
+      The method signature syntax is the most straight forward to use. When defining an object type, its methods can easily be described by providing signatures as follows:
+
+      ```ts
+      interface Date {
+        toString(): string;
+        setTime(time: number): number;
+      }
+      ```
+
+   2. **Function Type Literals**:
+
+      This type of function typing is typically used in the signature of a higher-order function i.e. a function which accepts functions as parameters or returns a function.
+
+      ```ts
+      interface Array<T> {
+        sort(compareFn?: (a: R, b: R) => number): this;
+      }
+      ```
+
+   3. **Object Type Literals With Call or Construct Signatures**:
+
+      This is same as the fact that functions in JS are just special objects that can be called again and again.
+
+      ```ts
+      interface RegExpConstructor {
+        (pattern: RegExp): RegExp;
+        (pattern: string, flags?: string): RegExp;
+      }
+      ```
