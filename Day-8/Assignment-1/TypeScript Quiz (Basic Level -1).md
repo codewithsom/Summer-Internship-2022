@@ -101,7 +101,7 @@
       This type of function typing is typically used in the signature of a higher-order function i.e. a function which accepts functions as parameters or returns a function.
 
       ```ts
-      interface Array<T> {
+      interface Array<R> {
         sort(compareFn?: (a: R, b: R) => number): this;
       }
       ```
@@ -116,3 +116,32 @@
         (pattern: string, flags?: string): RegExp;
       }
       ```
+### 5. How to define generic types for classes ?
+
+   To do this we can use the generic type parameter in '`< >`' brackets.
+
+   For example:
+
+   ```ts
+   class StudentInfo<S, R> {
+     private Id: S;
+     private Name: R;
+
+     setValue(id: S, mame: R): void {
+       this.Id = id;
+       this.Name = name;
+     }
+
+     display(): void {
+       console.log(`Id = ${this.Id}, Name = ${this.Name}`);
+     }
+   }
+
+   let student1 = new StudentInfo<number, string>();
+   student1.setValue(7, "Roman 😎");
+   student1.display();
+   ```
+ 
+ <hr>
+
+## Program -
