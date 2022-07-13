@@ -7,41 +7,41 @@
    - **Boolean**: These work the same way as they do in JavaScript. Variables of data type boolean are declared like:
 
      ```ts
-     const myBool: boolean = false;
+     const myBool: boolean = true;
      ```
 
    - **String**: Same as strings in JavaScript.
 
      ```ts
-     let myStr: string = "Hamburger";
+     let myStr: string = "Almonds";
      ```
 
-   - **Number**: They are also the same as numbers in JS.
+   - **Number**: They are also the same as numbers in JavaScript.
      ```ts
-     const minAgeToVote: number = 18;
+     const minAgeToVote: number = 7777;
      ```
-   - **Array**: Arrays in TS are just like arrays in js.
+   - **Array**: Arrays in TS are just like arrays in JavaScript.
      ```ts
-     const myArr: number[] = [12, 90, 71];
+     const myArr: number[] = [123, 456, 789];
      ```
      The above example is suitable for cases when the entire array will only store numbers.
      You can also declare an array in the below method:
      ```ts
-     const myArr: Array<number> = [12, 90, 71];
+     const myArr: Array<number> = [24, 74, 54];
      ```
      To create an array that can store all the datatypes:
      ```ts
-     const myArr: Array<any> = [12, "true", false];
+     const myArr: Array<any> = [97, "true", false];
      ```
    - **Tuples**: Tuples are a data type unique to TypeScript. You can consider them as arrays with fixed elements. This is a great alternative when you know how many variables do you want in your array.
 
      ```ts
      let mine: [number, string];
-     mine[0] = 14; // This is accepted.
+     mine[0] = 876;            // This is accepted.
 
-     mine[0] = "Hello"; // This will throw an error.
+     mine[0] = "Hello 🙂";       // This will throw an error.
 
-     mine = [121, "Dave", "Ardito"]; // This also throws an error.
+     mine = [191, "Jack", "Wheeler"];         // This also throws an error.
 
-     mine = [12, "Diablo"]; // This works.
+     mine = [186, "May"];            // This works.
      ```
