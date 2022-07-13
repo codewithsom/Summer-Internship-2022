@@ -37,11 +37,31 @@
 
      ```ts
      let mine: [number, string];
-     mine[0] = 876;            // This is accepted.
+     mine[0] = 876;           
 
-     mine[0] = "Hello 🙂";       // This will throw an error.
+     mine[0] = "Hello 🙂";       
 
-     mine = [191, "Jack", "Wheeler"];         // This also throws an error.
+     mine = [191, "Jack", "Wheeler"];        
 
-     mine = [186, "May"];            // This works.
+     mine = [186, "May"];          
      ```
+
+### 2. What is Generic data type ?
+
+   Generics in TypeScript is a tool which enables us to create reusable components. It creates a component that can work with a variety of data types rather than a single data type.
+   
+   For Example :
+
+   ```ts
+   function showVal<T>(arg: R) {
+     return arg;
+   }
+
+   console.log(showVal<number>(999));        // prints 999
+   ```
+
+   * The use of Generics has 3 main advantages:
+
+   1. **Type-safety**: It will allow a variable to store only type of value.
+   2. Typecasting is not required.
+   3. Compile-Time Checking.
