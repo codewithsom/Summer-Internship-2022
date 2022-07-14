@@ -166,3 +166,39 @@ Example `tsconfig.json` files :
 ```
 
 ### 5. What are the methods provided by `fs` module to manipulate files ?
+
+**File System module** :
+
+File System is a core module by a node to interact with files and folders. It provides various events and methods to access and manipulate files and folders in our machine.
+
+**Some of the operations it provides to manipulate files are** :
+
+* Create and delete files or folders.
+* Accessing and renaming files or folders.
+* Read, write and append files.
+* Changing permission and owner of file or folder.
+
+To use the File System module in your program, you need to fs node core module:
+
+**Syntax** :
+```
+const fs = require('fs')
+```
+**Now before using the fs module you need to understand that there are two approaches to use fs module methods** :-
+
+1. Using synchronous methods
+2. Using asynchronous methods
+
+Now the question comes which should we choose synchronous methods or asynchronous methods. Let’s discuss what is the difference between synchronous methods and asynchronous methods of fs module.
+**Synchronous and Asynchronous methods** :
+**Synchronous methods** use functions that are **blocking in nature**.  Blocking functions blocks the execution of the next instruction or piece of code till the current operation is not completed. **Synchronous methods** wait **for the current operation to be finished** and then it continues with the execution of the next instruction. But this creates problems when the current operation takes a lot of time.
+
+**Example** : Suppose our server after getting a request needs to create a file and then write some text in it and then respond back to the client. If for creating and writing on a file we use a synchronous approach then for each coming request we would block the execution till we are done with operations and responding to that client. If a lot of requests come together we are basically blocking other users till we are finished with the first user. The last user would have to wait a lot to get this response and that would be bad.
+
+**Asynchronous methods** are non-blocking in nature as they never wait for the current operation to complete. While calling an asynchronous method we have to pass a callback function as an argument.  When an asynchronous function is called it is registered or pushed by `Event loop` to a queue and the next line of code is executed. In the background, our asynchronous function is executed and when it completes, the callback function we passed as an argument is pushed in the callback queue and is executed when its turn comes.
+
+```
+Basically, the catch here is to understand that asynchronous methods do the operation in the background and do not block the execution of code.
+```
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211007162244/syncasyncapproach.png)
