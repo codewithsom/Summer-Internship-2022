@@ -45,3 +45,22 @@ The following diagram shows a simplified overview of the event loop's order of o
 * The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
 * The event loop allows us to use callbacks and promises.
 * The event loop executes the tasks starting from the oldest first.
+
+**For Example**:
+```js
+console.log("Roman 😎");
+
+setTimeout(function(){
+	console.log("The Head of the Table 😎");
+}, 1000);
+
+console.log("The Tribal Cheif 😎");
+```
+
+**Output**:
+```
+Roman 😎
+The Head of the Table 😎
+THe Tribal Cheif 😎
+```
+
