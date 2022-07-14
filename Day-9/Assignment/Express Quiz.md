@@ -373,3 +373,105 @@ To expand on this example, a user wants to visit TechTarget.com. The user types 
 When these request/response pairs are being sent, they use TCP/IP to reduce and transport information in small packets of binary sequences of ones and zeros. These packets are physically sent through electric wires, fiber optic cables and wireless networks.
 
 The requests and responses that servers and clients use to share data with each other consist of ASCII code. Requests state what information the client is seeking from the server; responses contain code that the client browser will translate into a web page.
+
+### 11. What is Middleware in ExpressJS ?
+
+**Express.js** is a routing and Middleware framework for handling the different routing of the webpage and it works between the request and response cycle. Middleware gets executed after the server receives the request and before the controller actions send the response. Middleware has the access to the request object, responses object, and next, it can process the request before the server send a response. An Express-based application is a series of middleware function calls.
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211007172251/middleware.png)
+
+**Advantages of using middleware** :
+
+- Middleware can process request objects multiple times before the server works for that request.
+- Middleware can be used to add logging and authentication functionality.
+- Middleware improves client-side rendering performance.
+- Middleware is used for setting some specific HTTP headers.
+- Middleware helps for Optimization and better performance.
+
+**Middleware Chaining** : Middleware can be chained from one to another, Hence creating a chain of functions that are executed in order. The last function sends the response back to the browser. So, before sending the response back to the browser the different middleware process the request.
+
+The `next()` function in the express is responsible for calling the next middleware function if there is one.
+Modified requests will be available to each middleware via the next function –
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211007175759/MiddlewareChaining.png)
+
+In the above case, the incoming request is modified and various operations are performed using several middlewares, and middleware is chained using the next function. The router sends the response back to the browser.
+
+**Middleware Syntax** : The basic syntax for the middleware functions are as follows –
+```
+app.get(path, (req, res, next) => {}, (req, res) => {})
+```
+The middle part **(req,res,next)=>{}** is the middleware function. Here we generally perform the actions required before the user is allowed to view the webpage or call the data and many other functions. So let us create our own middleware and see its uses.
+
+Let us create our middleware and see that how it executes.
+**Step 1**: Go to your project directory and enter the following command to create a NodeJs project. Make sure that NodeJs is installed in your machine.
+```
+npm init -y
+```
+It will create a package.json file. 
+
+**Step 2** : Install two dependencies using the following command.
+```
+npm install express nodemon
+```
+**Step 3** : In the scripts section of the package.json file, add the following code line.
+```
+"start": "nodemon index.js", 
+```
+**Step 4** : Create an index.js file in the directory. Make sure that it is not inside any subdirectories of the directory you are working in.
+
+**Project Structure** : It will look like the following. 
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211001202640/Screenshot20211001202617.png)
+
+Now we will set up our **express app** and send a **response** to our **server**.
+
+Here is the code for the **index.js** file.
+```js
+const express = require("express");
+const app = express();
+
+const port = process.env.port || 3000;
+app.get("/", (req, res) => {
+res.send(`<div>
+	<h2>Welcome to Wisflux Academy!</h2>
+	<h5>Tutorial on Middleware</h5>
+</div>`);
+});
+app.listen(port, () => {
+console.log(`Listening to port ${port}`);
+});
+```
+**Step to run the application** : Run the code by entering the following command on the terminal.
+```
+npm start
+```
+**Output** :
+```
+## Welcome to Wisflux Academy!
+
+Tutorial on Middleware
+```
+**Create a Middleware** : In the **app.get()** function, modify according to the following code.
+
+**index.js**
+```js
+app.get(
+"/",
+(req, res, next) => {
+	console.log("hello");
+	next();
+},
+(req, res) => {
+	res.send(`<div>
+	<h2>Welcome to WA 😁</h2>
+	<h5>Tutorial on Middleware</h5>
+</div>`);
+}
+);
+```
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20210927101344/Screenshot20210927101329.png)
+
+<hr>
+
+### Program :
