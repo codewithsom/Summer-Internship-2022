@@ -122,7 +122,7 @@ A project is compiled in one of the following ways:
 When input files are specified on the command line, `tsconfig.json` files are ignored.
 
 Example `tsconfig.json` files :
-* Using the files property
+* Using the `files` property
 ```ts
 {
   "compilerOptions": {
@@ -147,5 +147,20 @@ Example `tsconfig.json` files :
     "tsc.ts",
     "diagnosticInformationMap.generated.ts"
   ]
+}
+```
+* Using the `include` and `exclude` properties
+```ts
+{
+  "compilerOptions": {
+    "module": "system",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "outFile": "../../built/local/tsc.js",
+    "sourceMap": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
 }
 ```
