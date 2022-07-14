@@ -17,13 +17,26 @@ Node.js = Runtime Environment + JavaScript Library
 
 ### 2. What is V8 Engine ?
 
-V8 is the name of the JavaScript engine that powers Google Chrome. It's the thing that takes our JavaScript and executes it while browsing with Chrome.
+V8 is a C++-based open-source JavaScript engine developed by Google. It was originally designed for Google Chrome and Chromium-based browsers (such as Brave) in 2008, but it was later utilized to create Node.js for server-side coding. In reality, JSON-based No-SQL databases like Couchbase and the widely used MongoDB use the V8 engine. V8 also powers Electron, a prominent desktop application framework, and Demo, the latest server-side runtime environment.
 
-V8 is the JavaScript engine i.e. it parses and executes JavaScript code. The DOM, and the other Web Platform APIs (they all makeup runtime environment) are provided by the browser.
+V8 is known to be a JavaScript engine because it takes JavaScript code and executes it while browsing in Chrome. It provides a runtime environment for the execution of JavaScript code. The best part is that the JavaScript engine is completely independent of the browser in which it runs. This is the feature that led Node.js designers to choose the V8 engine to power the framework, and the rest is history. The V8 engine was also utilized to construct desktop frameworks and databases as Node.JS grew in popularity.
 
-The cool thing is that the JavaScript engine is independent of the browser in which it's hosted. This key feature enabled the rise of Node.js. V8 was chosen to be the engine that powered Node.js back in 2009, and as the popularity of Node.js exploded, V8 became the engine that now powers an incredible amount of server-side code written in JavaScript.
+**Working** :
 
-The Node.js ecosystem is huge and thanks to V8 which also powers desktop apps, with projects like Electron.
+A JavaScript Engine is an interpreter that interprets JavaScript code and runs it. The first way to develop a JavaScript engine is to implement it as a standard interpreter, as done by Mozilla’s SpiderMonkey. The other option is to employ Just-in-Time (JIT) compilation, which turns native JavaScript code to machine code as V8 does. The distinction between V8 code and other programming languages is that it does not generate intermediate code.
+
+The Ignition interpreter compiles JavaScript code and generates non-optimized machine code when a developer or program runs it on V8 (i.e. in a browser or Node environment). The Turbofan and Crankshaft components of V8 examine and recompile the machine code at runtime for optimal performance.
+
+**Node.Js and V8** :
+
+Node.js is referred to as a runtime environment since it contains everything you need to run a JavaScript program.
+
+This V8 engine is at the heart of Node.js. The diagram compares the Java Virtual Machine (JVM), which is used to power the Java Runtime environment with the V8 engine. The Node.js runtime environment includes several Node APIs to power the Node.js environment in addition to the V8 engine. We can enhance the functionality of our node code by installing extra npm packages.
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211022221757/V8EGFG.png)
+
+One thing to keep in mind is that V8 is essentially a standalone C++ library that is utilized to run JavaScript code by Node or Chromium. V8 exposes an API that other applications can utilize, so you can embed V8 in your C++ program and run a JavaScript program from it. Node and Chrome work in this manner.
+
+Let’s say we want to add the ability to have statements like print(‘hello world’) in addition to console.log(‘Hello World’) in our JavaScript code. In V8, which is already open-sourced, we can add our own C++ implementation of the print function.
 
 ### 3. What is Event Loop in NodeJS ?
 
@@ -57,6 +70,7 @@ The Head of the Table 😎
 ```
 
 **Working of the Event loop** : 
+
 When Node.js starts, it initializes the event loop, processes the provided input script which may make async API calls, schedule timers, then begins processing the event loop. In the previous example, the initial input script consisted of console.log() statements and a setTimeout() function which schedules a timer.
 
 When using Node.js, a special library module called libuv is used to perform async operations. This library is also used, together with the back logic of Node, to manage a special thread pool called the libuv thread pool.This thread pool is composed of four threads used to delegate operations that are too heavy for the event loop. I/O operations, Opening and closing connections, setTimeouts are the example of such operations.
@@ -64,8 +78,11 @@ When using Node.js, a special library module called libuv is used to perform asy
 When the thread pool completes a task, a callback function is called which handles the error(if any) or does some other operation. This callback function is sent to the event queue. When the call stack is empty, the event goes through the event queue and sends the callback to the call stack.
 
 The following diagram is a proper representation of the event loop in a Node.js server :
+
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20200224050909/nodejs2.png)
+
 **Phases of the Event loop** : The following diagram shows a simplified overview of the event loop order of operations :
+
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20200224062607/phasesofloop-300x240.png)
 
 - **Timers** : Callbacks scheduled by setTimeout() or setInterval() are executed in this phase.
