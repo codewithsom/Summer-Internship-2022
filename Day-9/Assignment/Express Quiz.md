@@ -41,7 +41,7 @@ The following diagram shows a simplified overview of the event loop's order of o
 
 **Features of Event Loop**:
 
-Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.
-The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
-The event loop allows us to use callbacks and promises.
-The event loop executes the tasks starting from the oldest first.
+* Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.
+* The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
+* The event loop allows us to use callbacks and promises.
+* The event loop executes the tasks starting from the oldest first.
