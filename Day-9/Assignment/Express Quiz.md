@@ -331,4 +331,32 @@ It is a Language-Independent format that is derived from JavaScript. It is Human
 - It becomes quite dangerous when you used it with some unauthorized browsers. Like JSON service return a JSON file wrapped in a function call that has to be executed by the browsers if the browsers are unauthorized then your data can be hacked.
 - It has limited supported tools that we can use during the development.
 
+### 8. Why we use JSON format for API ?
 
+This is where the JavaScript Object Notation (JSON) enters the picture. JSON is nothing more than the data structure part of the JavaScript programming language. That means by its very definition, it is a perfect fit to represent JavaScript objects.
+
+But because most programming languages have similar models of how to represent structured data, JSON also is a good fit for the internal model of many other programming languages.
+
+This meant that JSON was a much more natural fit for developers to exchange structured data. It did not require the rather inconvenient “data binding” and “data serialization” steps that were notoriously difficult when using XML-based APIs.
+
+Instead, JSON allowed APIs to represent structured data in a way that simply was a better fit for the conceptual universe that most developers live in.
+
+### 9. What is a Framework ?
+
+**Framework**, on the other hand has defined open or unimplemented functions or objects which the user writes to create a custom application. (C++/Java users will understand this as it is much like implementing an abstract function). Because a framework is itself an application, it has a wider scope and includes almost everything necessary to make a user application as per his own needs. Wikipedia makes it more clear: 
+
+“In computer programming, a software framework is an abstraction in which software providing generic functionality can be selectively changed by additional user-written code, thus providing application-specific software” 
+
+![image](https://media.geeksforgeeks.org/wp-content/uploads/framework-vs-library.png)
+
+Thus, the key difference is in the **“Inversion of Control”**, commonly called as IoC. When we call a method from a library, we are in control. But in framework, the control is inverted i.e. the framework calls us. It defines a skeleton where the application defines its own features to fill out the skeleton. Example, in Javascript, we usually use this: 
+
+```
+$(document.ready(){     // this call will be done by the jquery 
+// framework when document will be ready.
+    
+    function() {
+        /* your code */    // our implementation inside the framework's function
+    }
+});
+```
