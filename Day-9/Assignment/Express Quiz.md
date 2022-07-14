@@ -291,3 +291,7 @@ API is an abbreviation for Application Programming Interface which is a collecti
 
 - **Cost** : Developing and implementing API is costly at times and requires high maintenance and support from developers.
 - **Security issues** : Using API adds another layer of surface which is then prone to attacks, and hence the security risk problem is common in API’s.
+
+### 7. What is JSON format ?
+
+`JSON stands for JavaScript Object Notation. It is a format for structuring data. This format is used by different web applications to communicate with each other. It is the replacement of the XML data exchange format. It is easy to struct the data compare to XML. It supports data structures like arrays and objects and the JSON documents that are rapidly executed on the server.`
