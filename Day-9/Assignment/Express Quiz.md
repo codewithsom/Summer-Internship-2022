@@ -39,7 +39,7 @@ The following diagram shows a simplified overview of the event loop's order of o
 
 ![image](https://miro.medium.com/max/1400/0*g6TFRGQDfqd2TWUn)
 
-**Features of Event Loop:
+** Features of Event Loop **:
 
 Event loop is an endless loop, which waits for tasks, executes them and then sleeps until it receives more tasks.
 The event loop executes tasks from the event queue only when the call stack is empty i.e. there is no ongoing task.
