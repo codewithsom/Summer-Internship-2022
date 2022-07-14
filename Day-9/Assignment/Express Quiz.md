@@ -219,7 +219,39 @@ fs.readFile(path,options,callback);
 **Parameters** :
 
 * path – the name or path of the file we want to read from
-* options – this is an optional argument and generally we pass encoding which is ‘utf-8‘
+* options – this is an optional argument and generally we pass encoding which is `‘utf-8‘`
 * callback – executed when we have read the file. It takes two parameters
 	* error –  if any error occurs
 	* data – contents of the file
+
+**Example** –  Create a file name app.js and also create a text file input.txt
+
+### Project Structure :
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211027162425/new.jpg)
+
+```js
+const fs = require("fs");
+// Asynchronous version of readFile method
+fs.readFile("input.txt", "utf-8", (error, data) => {
+
+// If the file doesnt exist then there
+// is error then if condition will run
+if (error) {
+	console.log("File not found");
+} else {
+
+	// Data contains the content that we
+	// have read from file in case of
+	// error , data will output undefined
+	console.log(data);
+}
+});
+```
+Run app.js using the command below :
+```
+node app.js
+```
+**Output** : 
+```
+Hurrah, now you know how to read a file.
+```
