@@ -14,6 +14,22 @@
 ```
 Node.js = Runtime Environment + JavaScript Library
 ```
+**For Example** :
+```js
+var http = require('http');
+
+// Create a server object:
+http.createServer(function (req, res) {
+
+	// Write a response to the client
+	res.write('Wisflux Academy');
+
+	// End the response
+	res.end();
+
+// The server object listens on port 8080
+}).listen(8080);
+```
 
 ### 2. What is V8 Engine ?
 
@@ -32,7 +48,7 @@ The Ignition interpreter compiles JavaScript code and generates non-optimized ma
 Node.js is referred to as a runtime environment since it contains everything you need to run a JavaScript program.
 
 This V8 engine is at the heart of Node.js. The diagram compares the Java Virtual Machine (JVM), which is used to power the Java Runtime environment with the V8 engine. The Node.js runtime environment includes several Node APIs to power the Node.js environment in addition to the V8 engine. We can enhance the functionality of our node code by installing extra npm packages.
-		![image](https://media.geeksforgeeks.org/wp-content/uploads/20211022221757/V8EGFG.png)
+![image](https://media.geeksforgeeks.org/wp-content/uploads/20211022221757/V8EGFG.png)
 
 One thing to keep in mind is that V8 is essentially a standalone C++ library that is utilized to run JavaScript code by Node or Chromium. V8 exposes an API that other applications can utilize, so you can embed V8 in your C++ program and run a JavaScript program from it. Node and Chrome work in this manner.
 
