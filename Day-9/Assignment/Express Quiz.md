@@ -202,3 +202,24 @@ Basically, the catch here is to understand that asynchronous methods do the oper
 ```
 
 ![image](https://media.geeksforgeeks.org/wp-content/uploads/20211007162244/syncasyncapproach.png)
+
+**File System provides us with synchronous as well as the asynchronous version of methods.**
+
+**NOTE**  –   We should always use the asynchronous version of methods in our code if we have a choice.  Synchronous methods should only be used in top-level code because top-level code is executed only once or only in situations where we are certain that operation won’t take long (lightweight operation).
+
+**Operations on file**:
+
+* Reading a file –  The simplest way to read a file is using `fs.readFile()` method. This method takes care of opening and closing the file and it loads the file contents in the memory for us to use in our program.
+
+**Syntax** :
+
+```
+fs.readFile(path,options,callback);
+```
+**Parameters** :
+
+* path – the name or path of the file we want to read from
+* options – this is an optional argument and generally we pass encoding which is ‘utf-8‘
+* callback – executed when we have read the file. It takes two parameters
+	* error –  if any error occurs
+	* data – contents of the file
