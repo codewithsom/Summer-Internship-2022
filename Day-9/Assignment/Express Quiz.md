@@ -164,3 +164,5 @@ Example `tsconfig.json` files :
   "exclude": ["node_modules", "**/*.spec.ts"]
 }
 ```
+
+### 5. What are the methods provided by `fs` module to manipulate files ?
