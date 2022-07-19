@@ -1,0 +1,35 @@
+.outerBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 60vw;
+}
+
+.type {
+    font-size: 2rem;
+    font-weight: bold;
+
+}
+
+.WatchEvent {
+    background-color: #ffba08;
+}
+
+.PushEvent {
+    background-color: #b9fbc0;
+}
+
+.CreateEvent {
+    background-color: #ff8fab;
+}
+
+.ForkEvent {
+    background-color: #f1c0e8;
+}
+
+.PullRequestEvent {
+    background-color: #c77dff;
+}
+

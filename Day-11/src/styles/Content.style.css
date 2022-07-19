@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 30vw;
+    border: solid 5px white;
+    border-right-color: black;
+    /*background-color: red;*/
+}
+
+.activity {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 70vw;
+    /*background-color: yellow;*/
+    overflow: auto;
+}
+
+.input {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 20px;
+}
