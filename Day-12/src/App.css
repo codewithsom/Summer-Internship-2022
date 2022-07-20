@@ -1,0 +1,56 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainSearch {
+    width: 100vw;
+    height: 15vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.search {
+    width: 50vw;
+    height: 5vh;
+    font-size: 1.2rem;
+}
+
+.mainContent {
+    background-color: pink;
+    width: 100vw;
+    height: 85vh;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: 300px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+
+.imgContainer {
+    height: 267px;
+    width: 400px;
+    display: flex;
+    border: solid 5px black;
+}
+
+.img {
+    height: 267px;
+    width: 400px;
+}
