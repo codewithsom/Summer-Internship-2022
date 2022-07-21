@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  redis-server:
+    image: 'redis'
+  
+  client:
+    build: ./client
+    container_name: visitors_client_c
+    ports:
+      - '3000:3000'
+    
+  server:
+    build: ./server
+    container_name: visitors_server_c
+    ports:
+      - '8000:8000'
